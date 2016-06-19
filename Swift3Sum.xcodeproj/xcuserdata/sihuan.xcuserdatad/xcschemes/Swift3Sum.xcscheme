@@ -48,6 +48,16 @@
                ReferencedContainer = "container:Swift3Sum.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1FCA452D1D168B2700FBD3B9"
+               BuildableName = "YYKitTests.xctest"
+               BlueprintName = "YYKitTests"
+               ReferencedContainer = "container:Swift3Sum.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

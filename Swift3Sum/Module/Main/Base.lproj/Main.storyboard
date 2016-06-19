@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11129.15" systemVersion="16A201w" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DVw-Sm-aIf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="n39-tV-ymB">
+            <objects>
+                <tabBarController id="DVw-Sm-aIf" customClass="MainController" customModule="Swift3Sum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="0xi-YO-Xty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jAb-zB-p8o" kind="relationship" relationship="viewControllers" id="weO-6e-eQ3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vRC-kt-oIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1425" y="-668"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="vcf-dX-vMX">
+            <objects>
+                <tableViewController id="v6V-Gs-dpI" customClass="SwiftLearnDemo" customModule="Swift3Sum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6I7-eo-fXA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="v6V-Gs-dpI" id="Shf-8d-Tqv"/>
+                            <outlet property="delegate" destination="v6V-Gs-dpI" id="hVB-fE-u0Y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="bfQ-9Y-Cs3"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rYo-kb-rtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="-669"/>
+        </scene>
+        <!--SwiftLearn-->
+        <scene sceneID="fLN-4R-A99">
+            <objects>
+                <navigationController id="jAb-zB-p8o" customClass="YYBaseNavigationController" customModule="Swift3Sum" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SwiftLearn" id="2DS-9B-y5T"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="msV-wa-oi1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="v6V-Gs-dpI" kind="relationship" relationship="rootViewController" id="nHU-yO-uo5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XxO-B8-MSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-716" y="-669"/>
+        </scene>
+    </scenes>
+</document>

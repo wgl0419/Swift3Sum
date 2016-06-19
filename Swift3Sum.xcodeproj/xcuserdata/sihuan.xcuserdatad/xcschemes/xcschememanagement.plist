@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>1F09DFCB1D168AB4005EF0BA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FCA45241D168B2700FBD3B9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1FCA452D1D168B2700FBD3B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
