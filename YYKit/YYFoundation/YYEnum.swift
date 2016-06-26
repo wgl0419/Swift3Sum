@@ -15,9 +15,7 @@ public enum YYDirection {
 
 // MARK: - 一些通用的动画
 public enum YYHudAnimation {
-    case None
-    case Fade
-    case Zoom
+    case none, fade, zoom
 }
 
 

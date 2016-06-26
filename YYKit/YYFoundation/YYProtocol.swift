@@ -10,18 +10,18 @@ import UIKit
 
 // MARK: - Cell配置协议
 public protocol YYCellRenderable {
-    func rederWithMode(model: AnyObject, indexPath: NSIndexPath?, containerView: UIView?)
+    func renderWith(model: AnyObject, at indexPath: NSIndexPath?, in viewController: UIViewController?)
 }
 
 
 
 // MARK: - 通知相关协议
-public protocol YYNotificationType {
+public protocol YYNotification {
     associatedtype Notification: RawRepresentable
     
-    static func postNotification(notification: Notification, object: AnyObject?, userInfo: [String : AnyObject]?)
-    static func addObserver(observer: AnyObject, selector: Selector, notification: Notification, object: AnyObject?)
-    static func removeObserver(observer: AnyObject, notification: Notification?, object: AnyObject?)
+    static func post(notification: Notification, object: AnyObject?, userInfo: [String : AnyObject]?)
+    static func addObserver(_ observer: AnyObject, selector: Selector, notification: Notification, object: AnyObject?)
+    static func removeObserver(_ observer: AnyObject, notification: Notification?, object: AnyObject?)
 }
 
 

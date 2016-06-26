@@ -16,13 +16,13 @@ extension UIViewController {
     }
     
     // MARK: - ChildVC相关
-    public func addChildViewController(_ childController: UIViewController, toSubView: Bool = false, fillSuperViewConstraint: Bool = false) {
+    public func addChildViewController(_ childController: UIViewController, withView: Bool = false, fillSuperView: Bool = false) {
         self.addChildViewController(childController)
-        if toSubView {
+        if withView {
             self.view.addSubview(childController.view)
             childController.view.frame = self.view.frame
             
-            if fillSuperViewConstraint {
+            if fillSuperView {
                 childController.view.addConstraintFillSuperView()
             }
         }

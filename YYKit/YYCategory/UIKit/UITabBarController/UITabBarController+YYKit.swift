@@ -19,7 +19,7 @@ extension UITabBarController {
             if let initialVc = UIViewController.newInstanceFromStoryboard(name: itemInfo.storyBoardName, isInitial: true) {
                 
                 let tabBarItem = UITabBarItem()
-                tabBarItem.title = itemInfo.titleTab
+                tabBarItem.title = itemInfo.tabTitle
                 if let image = itemInfo.imageName {
                     tabBarItem.image = UIImage(named: image)
                 }

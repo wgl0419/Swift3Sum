@@ -12,9 +12,9 @@ import YYKit
 class MainController: YYBaseTabBarController {
 
     let tabBarItemsInfo = [
-        TabBarItemInfo(storyBoardName: "SystemDemo", titleTab: "SystemDemo", imageName: nil, imageNameSelected: nil),
-        TabBarItemInfo(storyBoardName: "YYLibDemo", titleTab: "YYLibDemo", imageName: nil, imageNameSelected: nil),
-        TabBarItemInfo(storyBoardName: "ThirdLibDemo", titleTab: "ThirdLibDemo", imageName: nil, imageNameSelected: nil),
+        TabBarItemInfo(storyBoardName: "SystemDemo", tabTitle: "SystemDemo", imageName: nil, imageNameSelected: nil),
+        TabBarItemInfo(storyBoardName: "YYLibDemo", tabTitle: "YYLibDemo", imageName: nil, imageNameSelected: nil),
+        TabBarItemInfo(storyBoardName: "ThirdLibDemo", tabTitle: "ThirdLibDemo", imageName: nil, imageNameSelected: nil),
         ]
     
     override func viewDidLoad() {
