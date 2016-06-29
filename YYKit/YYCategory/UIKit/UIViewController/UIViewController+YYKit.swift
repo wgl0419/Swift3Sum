@@ -44,7 +44,7 @@ extension UIViewController {
 
 
 // MARK: - 快速添加一个按钮
-class YYButton: UIButton {
+class _YYButton: UIButton {
     var action: ((button: UIButton)->Void)! = nil
 }
 
@@ -62,22 +62,22 @@ extension UIViewController {
         }
     }
     
-    public func addButtonToViewWithTitle(title: String, action: (button: UIButton)->Void) -> UIButton {
+    public func addButtonToView(title: String, action: (button: UIButton)->Void) -> UIButton {
         buttonCount += 1
-        return addButtonWith(title: title, frame: CGRect(x: 0, y: 40*buttonCount, width: 320, height: 40), action: action)
+        return addButton(title: title, frame: CGRect(x: 0, y: 40*buttonCount, width: 320, height: 40), action: action)
     }
-    public func addButtonWith(title: String, frame: CGRect, action: (button: UIButton)->Void) -> UIButton {
-        let button = YYButton.init(type: UIButtonType.system)
+    public func addButton(title: String, frame: CGRect, action: (button: UIButton)->Void) -> UIButton {
+        let button = _YYButton.init(type: UIButtonType.system)
         button.action = action
         button.frame = frame
         button.contentHorizontalAlignment = .center
         button.setTitle(title, for: [])
-        button.addTarget(self, action: #selector(_yyButtonDidClick(_:)), for: UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(__YYButtonDidClick(_:)), for: UIControlEvents.touchUpInside)
         view.addSubview(button)
         return button
     }
     
-    func _yyButtonDidClick(_ button: YYButton) {
+    func __YYButtonDidClick(_ button: _YYButton) {
         if let action = button.action {
             action(button: button);
         }

@@ -33,6 +33,10 @@
 		1F09E03D1D169A33005EF0BA /* ThirdLibDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09E03C1D169A33005EF0BA /* ThirdLibDemo.swift */; };
 		1F09E03F1D169A3F005EF0BA /* SystemDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09E03E1D169A3F005EF0BA /* SystemDemo.swift */; };
 		1F09E0411D169B70005EF0BA /* YYBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09E0401D169B70005EF0BA /* YYBaseNavigationController.swift */; };
+		1F8E55091D223F83009875D8 /* YYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E55081D223F83009875D8 /* YYView.swift */; };
+		1F8E550C1D2240A7009875D8 /* YYImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E550B1D2240A7009875D8 /* YYImageView.swift */; };
+		1F8E550E1D2240CA009875D8 /* YYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E550D1D2240CA009875D8 /* YYButton.swift */; };
+		1F8E55101D224131009875D8 /* YYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E550F1D224131009875D8 /* YYLabel.swift */; };
 		1FCA45281D168B2700FBD3B9 /* YYKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FCA45271D168B2700FBD3B9 /* YYKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FCA452F1D168B2700FBD3B9 /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA45251D168B2700FBD3B9 /* YYKit.framework */; };
 		1FCA45361D168B2700FBD3B9 /* YYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA45351D168B2700FBD3B9 /* YYKitTests.swift */; };
@@ -125,6 +129,10 @@
 		1F09E03C1D169A33005EF0BA /* ThirdLibDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdLibDemo.swift; sourceTree = "<group>"; };
 		1F09E03E1D169A3F005EF0BA /* SystemDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemDemo.swift; sourceTree = "<group>"; };
 		1F09E0401D169B70005EF0BA /* YYBaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYBaseNavigationController.swift; sourceTree = "<group>"; };
+		1F8E55081D223F83009875D8 /* YYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYView.swift; sourceTree = "<group>"; };
+		1F8E550B1D2240A7009875D8 /* YYImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYImageView.swift; sourceTree = "<group>"; };
+		1F8E550D1D2240CA009875D8 /* YYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYButton.swift; sourceTree = "<group>"; };
+		1F8E550F1D224131009875D8 /* YYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLabel.swift; sourceTree = "<group>"; };
 		1FCA45251D168B2700FBD3B9 /* YYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCA45271D168B2700FBD3B9 /* YYKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKit.h; sourceTree = "<group>"; };
 		1FCA45291D168B2700FBD3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -367,6 +375,17 @@
 			path = SystemDemo;
 			sourceTree = "<group>";
 		};
+		1F8E550A1D223F87009875D8 /* YYLib */ = {
+			isa = PBXGroup;
+			children = (
+				1F8E55081D223F83009875D8 /* YYView.swift */,
+				1F8E550F1D224131009875D8 /* YYLabel.swift */,
+				1F8E550B1D2240A7009875D8 /* YYImageView.swift */,
+				1F8E550D1D2240CA009875D8 /* YYButton.swift */,
+			);
+			name = YYLib;
+			sourceTree = "<group>";
+		};
 		1FCA45261D168B2700FBD3B9 /* YYKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +393,7 @@
 				1F09E0141D168F49005EF0BA /* YYFoundation */,
 				1FCA45291D168B2700FBD3B9 /* Info.plist */,
 				1FCA45271D168B2700FBD3B9 /* YYKit.h */,
+				1F8E550A1D223F87009875D8 /* YYLib */,
 			);
 			path = YYKit;
 			sourceTree = "<group>";
@@ -668,10 +688,14 @@
 				1F09E01B1D168F49005EF0BA /* YYStruct.swift in Sources */,
 				1F09E0191D168F49005EF0BA /* YYEnum.swift in Sources */,
 				1F09E01A1D168F49005EF0BA /* YYProtocol.swift in Sources */,
+				1F8E550E1D2240CA009875D8 /* YYButton.swift in Sources */,
 				1F09E00D1D168D00005EF0BA /* UITabBarController+YYKit.swift in Sources */,
 				1F09E01F1D168FE7005EF0BA /* UIViewController+YYKit.swift in Sources */,
 				1F09E0221D169145005EF0BA /* UIView+YYKit.swift in Sources */,
+				1F8E55091D223F83009875D8 /* YYView.swift in Sources */,
 				1F09E01C1D168F49005EF0BA /* YYSystemNotification.swift in Sources */,
+				1F8E550C1D2240A7009875D8 /* YYImageView.swift in Sources */,
+				1F8E55101D224131009875D8 /* YYLabel.swift in Sources */,
 				1F09E0251D1691AF005EF0BA /* NSObject+YYKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
