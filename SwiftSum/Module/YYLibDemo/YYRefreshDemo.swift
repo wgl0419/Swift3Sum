@@ -15,10 +15,10 @@ class YYRefreshDemo: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        extendedLayoutNone()
         addScrollView()
         addRefresh()
-        scrollView.yy_topRefresh?.beginRefresh()
+//        scrollView.yy_topRefresh?.beginRefresh()
         
         
 //        addButtonToView(title: "test") { [weak self] (button) in
@@ -31,6 +31,11 @@ class YYRefreshDemo: UIViewController {
         super.viewDidLayoutSubviews()
         scrollView.frame = view.bounds
         scrollView.contentSize = view.bounds.size
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        scrollView.yy_topRefresh?.beginRefresh()
     }
     
     func addScrollView() {

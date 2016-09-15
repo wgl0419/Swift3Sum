@@ -240,20 +240,29 @@ extension YYRefresh {
     
     // 增加或减少滚动区域
     func park(visible: Bool) {
+        guard let scrollView = scrollView else { return }
         var contentInset = scrollView.contentInset
+        var contentOffset = scrollView.contentOffset
         // 增加滚动区域
-        let contentOffset = visible ? config.viewHeight : -config.viewHeight
+        let offset = visible ? config.viewHeight : -config.viewHeight
         switch position {
         case .top:
-            contentInset.top += contentOffset
+            contentInset.top += offset
+            contentOffset.y -= offset
         case .left:
-            contentInset.left += contentOffset
+            contentInset.left += offset
+            contentOffset.x -= offset
         case .bottom:
-            contentInset.bottom += contentOffset
+            contentInset.bottom += offset
+            contentOffset.y += offset
         case .right:
-            contentInset.right += contentOffset
+            contentInset.right += offset
+            contentOffset.x += offset
         }
+        // 增加滚动区域
         scrollView.contentInset = contentInset
+        // 设置滚动位置
+        scrollView.contentOffset = contentOffset
     }
 }
 

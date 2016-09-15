@@ -12,7 +12,7 @@ class YYBaseNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationBar.isTranslucent = false
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +21,6 @@ class YYBaseNavigationController: UINavigationController {
         if viewControllers.count == 1 {
             viewController.hidesBottomBarWhenPushed = true
         }
-        viewController.edgesForExtendedLayout = []
         super.pushViewController(viewController, animated: animated)
     }
 }
