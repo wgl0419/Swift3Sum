@@ -248,21 +248,22 @@ extension YYRefresh {
         switch position {
         case .top:
             contentInset.top += offset
-            contentOffset.y -= offset
+            contentOffset.y = visible ? -config.readyOffset : 0
         case .left:
             contentInset.left += offset
-            contentOffset.x -= offset
+            contentOffset.x = visible ? -config.readyOffset : 0
         case .bottom:
             contentInset.bottom += offset
-            contentOffset.y += offset
+            //contentOffset.y += offset
         case .right:
             contentInset.right += offset
-            contentOffset.x += offset
+            //contentOffset.x += offset
         }
-        // 增加滚动区域
-        scrollView.contentInset = contentInset
         // 设置滚动位置
         scrollView.contentOffset = contentOffset
+        
+        // 增加滚动区域
+        scrollView.contentInset = contentInset
     }
 }
 

@@ -18,7 +18,7 @@ class YYRefreshDemo: UIViewController {
         extendedLayoutNone()
         addScrollView()
         addRefresh()
-//        scrollView.yy_topRefresh?.beginRefresh()
+        scrollView.yy_topRefresh?.beginRefresh()
         
         
 //        addButtonToView(title: "test") { [weak self] (button) in

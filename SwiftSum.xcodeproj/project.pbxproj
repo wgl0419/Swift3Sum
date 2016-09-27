@@ -57,6 +57,8 @@
 		EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */; };
 		EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E50A1D81B4DE00805249 /* YYRefreshDemo.swift */; };
 		EE71E51A1D8268ED00805249 /* YYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE71E5191D8268ED00805249 /* YYRefresh.bundle */; };
+		EEAC1C031D9A25E600A40191 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC1C021D9A25E600A40191 /* AppInfo.swift */; };
+		EEAC1C061D9A4EE100A40191 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */; };
 		EEAE0E071D84FC3400981405 /* YYDim.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E061D84FC3400981405 /* YYDim.swift */; };
 		EEAE0E091D84FFA200981405 /* YYAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E081D84FFA200981405 /* YYAnimation.swift */; };
 		EEAE0E0B1D85006F00981405 /* YYClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E0A1D85006F00981405 /* YYClosure.swift */; };
@@ -64,6 +66,7 @@
 		EEAE0E0F1D865F1300981405 /* YYGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E0E1D865F1300981405 /* YYGCD.swift */; };
 		EEBE86F81D82885B005B8CA7 /* YYXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE86F71D82885B005B8CA7 /* YYXibView.swift */; };
 		EEBE86FA1D828966005B8CA7 /* YYRefreshDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBE86F91D828966005B8CA7 /* YYRefreshDemo.xib */; };
+		EEF3D1341D8D842D00A22B5C /* UINavigationBar+YYSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */; };
 		EEF501FB1D815EA500FF90B0 /* YYSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF501F91D815EA500FF90B0 /* YYSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEF501FE1D815EA500FF90B0 /* YYSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF501F71D815EA500FF90B0 /* YYSDK.framework */; };
 		EEF501FF1D815EA500FF90B0 /* YYSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EEF501F71D815EA500FF90B0 /* YYSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -147,6 +150,8 @@
 		EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemo.swift; sourceTree = "<group>"; };
 		EE71E50A1D81B4DE00805249 /* YYRefreshDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefreshDemo.swift; sourceTree = "<group>"; };
 		EE71E5191D8268ED00805249 /* YYRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YYRefresh.bundle; sourceTree = "<group>"; };
+		EEAC1C021D9A25E600A40191 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		EEAE0E061D84FC3400981405 /* YYDim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYDim.swift; sourceTree = "<group>"; };
 		EEAE0E081D84FFA200981405 /* YYAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYAnimation.swift; sourceTree = "<group>"; };
 		EEAE0E0A1D85006F00981405 /* YYClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYClosure.swift; sourceTree = "<group>"; };
@@ -155,6 +160,7 @@
 		EEAE0E161D86F4E700981405 /* 01-基础部分.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "01-基础部分.playground"; sourceTree = "<group>"; };
 		EEBE86F71D82885B005B8CA7 /* YYXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYXibView.swift; sourceTree = "<group>"; };
 		EEBE86F91D828966005B8CA7 /* YYRefreshDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYRefreshDemo.xib; sourceTree = "<group>"; };
+		EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+YYSDK.swift"; sourceTree = "<group>"; };
 		EEF501D31D815AB800FF90B0 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF501F71D815EA500FF90B0 /* YYSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF501F91D815EA500FF90B0 /* YYSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYSDK.h; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEF501FE1D815EA500FF90B0 /* YYSDK.framework in Frameworks */,
+				EEAC1C061D9A4EE100A40191 /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +215,7 @@
 			children = (
 				EE28D0431D81788F0050C962 /* Info.plist */,
 				EE28CFDB1D8177690050C962 /* AppDelegate.swift */,
+				EEAC1C021D9A25E600A40191 /* AppInfo.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -392,6 +400,7 @@
 				EE28D0271D8177B90050C962 /* UIViewController */,
 				EE28D0291D8177B90050C962 /* UIWebView */,
 				EE28D02B1D8177B90050C962 /* WKWebView */,
+				EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -529,6 +538,14 @@
 			name = YYRefreshDemo;
 			sourceTree = "<group>";
 		};
+		EEAC1C041D9A4EE000A40191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EEAE0E031D84FB0600981405 /* YYImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
@@ -571,6 +588,7 @@
 				EE28CFD91D8177690050C962 /* SwiftSum */,
 				EEF501D41D815AB800FF90B0 /* Products */,
 				EEF501F81D815EA500FF90B0 /* YYSDK */,
+				EEAC1C041D9A4EE000A40191 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -626,6 +644,7 @@
 				EEF501D01D815AB800FF90B0 /* Frameworks */,
 				EEF501D11D815AB800FF90B0 /* Resources */,
 				EEF502031D815EA500FF90B0 /* Embed Frameworks */,
+				EEAC1C081D9A564F00A40191 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -722,6 +741,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EEAC1C081D9A564F00A40191 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EEF501CF1D815AB800FF90B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -732,6 +768,7 @@
 				EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */,
 				EEAE0E0D1D8506DF00981405 /* SwiftLearn.swift in Sources */,
 				EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */,
+				EEAC1C031D9A25E600A40191 /* AppInfo.swift in Sources */,
 				EE28CFF31D8177690050C962 /* AppDelegate.swift in Sources */,
 				EE28CFF61D8177690050C962 /* YYBaseNavigationController.swift in Sources */,
 				EE28CFF51D8177690050C962 /* YYBaseDemoController.swift in Sources */,
@@ -782,6 +819,7 @@
 				EE28D0371D8177B90050C962 /* UIColor+YYSDK.swift in Sources */,
 				EEAE0E091D84FFA200981405 /* YYAnimation.swift in Sources */,
 				EE28D03E1D8177B90050C962 /* ViewController+YYSDK.swift in Sources */,
+				EEF3D1341D8D842D00A22B5C /* UINavigationBar+YYSDK.swift in Sources */,
 				EE28D0551D817A840050C962 /* YYRefreshView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,8 +953,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24KJRC9CBU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.SwiftSum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -930,8 +973,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24KJRC9CBU;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = SwiftSum/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.SwiftSum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -952,6 +1000,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = YYSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -975,6 +1024,7 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = YYSDK/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yy.ios.YYSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";

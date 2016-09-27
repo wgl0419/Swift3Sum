@@ -16,6 +16,7 @@ class SystemDemo: YYBaseDemoController {
         self.dataArray = [
             LibDemoInfo(title: "SystemDemo", desc: "SystemDemo", controllerName: "TheBasicsDemo"),
         ]
+        print(App.uniqueDeviceId)
     }
     
 }
