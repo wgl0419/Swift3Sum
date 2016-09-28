@@ -16,6 +16,11 @@ public struct App {
     
     public static var keychain: Keychain = Keychain(service: name)
     
+    //返回一个全新的唯一 ID, such as "E621E1F8-C36C-495A-93FC-0C247A3E6E5F"
+    public static var randomId: String = {
+        return UUID().uuidString
+    }()
+    
     public static var uniqueDeviceId: String = {
         var deviceId = keychain["uniqueDeviceId"]
         if deviceId == nil {

@@ -14,6 +14,7 @@ class YYLibDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
+            LibDemoInfo(title: "YYNoDataViewDemo", desc: "无数据展示的通用控件", controllerName: "YYNoDataViewDemo"),
             LibDemoInfo(title: "YYRefreshDemo", desc: "上下左右4个方向的刷新控件", controllerName: "YYRefreshDemo"),
         ]
     }

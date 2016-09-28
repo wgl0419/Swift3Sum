@@ -54,11 +54,15 @@
 		EE28D0541D817A840050C962 /* YYRefreshFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28D04C1D817A840050C962 /* YYRefreshFoundation.swift */; };
 		EE28D0551D817A840050C962 /* YYRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28D04D1D817A840050C962 /* YYRefreshView.swift */; };
 		EE28D0561D817A840050C962 /* YYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE28D04E1D817A840050C962 /* YYView.swift */; };
+		EE38FCEA1D9B5B04004CC33E /* YYNoDataViewImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE38FCE91D9B5B04004CC33E /* YYNoDataViewImage@2x.png */; };
+		EE38FCEC1D9B5C3E004CC33E /* YYNoDataViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38FCEB1D9B5C3E004CC33E /* YYNoDataViewDemo.swift */; };
 		EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */; };
 		EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E50A1D81B4DE00805249 /* YYRefreshDemo.swift */; };
 		EE71E51A1D8268ED00805249 /* YYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE71E5191D8268ED00805249 /* YYRefresh.bundle */; };
 		EEAC1C031D9A25E600A40191 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC1C021D9A25E600A40191 /* AppInfo.swift */; };
 		EEAC1C061D9A4EE100A40191 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */; };
+		EEAC1C0A1D9A64F200A40191 /* YYNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC1C091D9A64F200A40191 /* YYNoDataView.swift */; };
+		EEAC1C0D1D9A650A00A40191 /* YYNoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEAC1C0C1D9A650A00A40191 /* YYNoDataView.xib */; };
 		EEAE0E071D84FC3400981405 /* YYDim.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E061D84FC3400981405 /* YYDim.swift */; };
 		EEAE0E091D84FFA200981405 /* YYAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E081D84FFA200981405 /* YYAnimation.swift */; };
 		EEAE0E0B1D85006F00981405 /* YYClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE0E0A1D85006F00981405 /* YYClosure.swift */; };
@@ -145,6 +149,8 @@
 		EE28D04C1D817A840050C962 /* YYRefreshFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefreshFoundation.swift; sourceTree = "<group>"; };
 		EE28D04D1D817A840050C962 /* YYRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYRefreshView.swift; sourceTree = "<group>"; };
 		EE28D04E1D817A840050C962 /* YYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYView.swift; sourceTree = "<group>"; };
+		EE38FCE91D9B5B04004CC33E /* YYNoDataViewImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "YYNoDataViewImage@2x.png"; sourceTree = "<group>"; };
+		EE38FCEB1D9B5C3E004CC33E /* YYNoDataViewDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNoDataViewDemo.swift; sourceTree = "<group>"; };
 		EE71E5061D81B15E00805249 /* Swift2.2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift2.2.playground; sourceTree = "<group>"; };
 		EE71E5071D81B15E00805249 /* Swift3.0.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift3.0.playground; sourceTree = "<group>"; };
 		EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemo.swift; sourceTree = "<group>"; };
@@ -152,6 +158,8 @@
 		EE71E5191D8268ED00805249 /* YYRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YYRefresh.bundle; sourceTree = "<group>"; };
 		EEAC1C021D9A25E600A40191 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		EEAC1C091D9A64F200A40191 /* YYNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNoDataView.swift; sourceTree = "<group>"; };
+		EEAC1C0C1D9A650A00A40191 /* YYNoDataView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYNoDataView.xib; sourceTree = "<group>"; };
 		EEAE0E061D84FC3400981405 /* YYDim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYDim.swift; sourceTree = "<group>"; };
 		EEAE0E081D84FFA200981405 /* YYAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYAnimation.swift; sourceTree = "<group>"; };
 		EEAE0E0A1D85006F00981405 /* YYClosure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYClosure.swift; sourceTree = "<group>"; };
@@ -275,6 +283,7 @@
 			children = (
 				EE28CFED1D8177690050C962 /* YYLibDemo.storyboard */,
 				EE28CFEE1D8177690050C962 /* YYLibDemo.swift */,
+				EE38FCED1D9B5C43004CC33E /* YYNoDataViewDemo */,
 				EE71E50E1D81B4E400805249 /* YYRefreshDemo */,
 			);
 			path = YYLibDemo;
@@ -499,6 +508,7 @@
 				EEAE0E081D84FFA200981405 /* YYAnimation.swift */,
 				EEAE0E061D84FC3400981405 /* YYDim.swift */,
 				EEBE86F71D82885B005B8CA7 /* YYXibView.swift */,
+				EEAC1C0B1D9A64F700A40191 /* YYNoDataView */,
 				EEAE0E051D84FBA100981405 /* YYDesignableView */,
 				EEAE0E031D84FB0600981405 /* YYImageBrowser */,
 				EE28D04A1D817A840050C962 /* YYRefresh */,
@@ -516,6 +526,14 @@
 				EE71E5191D8268ED00805249 /* YYRefresh.bundle */,
 			);
 			path = YYRefresh;
+			sourceTree = "<group>";
+		};
+		EE38FCED1D9B5C43004CC33E /* YYNoDataViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EE38FCEB1D9B5C3E004CC33E /* YYNoDataViewDemo.swift */,
+			);
+			name = YYNoDataViewDemo;
 			sourceTree = "<group>";
 		};
 		EE71E5051D81B15E00805249 /* SwiftLearnDemo */ = {
@@ -544,6 +562,16 @@
 				EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEAC1C0B1D9A64F700A40191 /* YYNoDataView */ = {
+			isa = PBXGroup;
+			children = (
+				EEAC1C091D9A64F200A40191 /* YYNoDataView.swift */,
+				EEAC1C0C1D9A650A00A40191 /* YYNoDataView.xib */,
+				EE38FCE91D9B5B04004CC33E /* YYNoDataViewImage@2x.png */,
+			);
+			name = YYNoDataView;
 			sourceTree = "<group>";
 		};
 		EEAE0E031D84FB0600981405 /* YYImageBrowser */ = {
@@ -736,6 +764,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE71E51A1D8268ED00805249 /* YYRefresh.bundle in Resources */,
+				EE38FCEA1D9B5B04004CC33E /* YYNoDataViewImage@2x.png in Resources */,
+				EEAC1C0D1D9A650A00A40191 /* YYNoDataView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +796,7 @@
 				EE28CFFF1D8177690050C962 /* YYLibDemo.swift in Sources */,
 				EE28CFF71D8177690050C962 /* YYBaseTabBarController.swift in Sources */,
 				EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */,
+				EE38FCEC1D9B5C3E004CC33E /* YYNoDataViewDemo.swift in Sources */,
 				EEAE0E0D1D8506DF00981405 /* SwiftLearn.swift in Sources */,
 				EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */,
 				EEAC1C031D9A25E600A40191 /* AppInfo.swift in Sources */,
@@ -799,6 +830,7 @@
 				EE28D0511D817A840050C962 /* YYImageView.swift in Sources */,
 				EE28D03A1D8177B90050C962 /* UIScrollView+YYSDK.swift in Sources */,
 				EE28D03C1D8177B90050C962 /* UITableView+YYSDK.swift in Sources */,
+				EEAC1C0A1D9A64F200A40191 /* YYNoDataView.swift in Sources */,
 				EE28D0521D817A840050C962 /* YYLabel.swift in Sources */,
 				EE28D0531D817A840050C962 /* YYRefresh.swift in Sources */,
 				EE28D0331D8177B90050C962 /* NSAttributedString+YYSDK.swift in Sources */,
