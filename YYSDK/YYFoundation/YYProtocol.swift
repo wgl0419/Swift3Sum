@@ -16,6 +16,7 @@ public protocol YYCellRenderable {
 public protocol YYRenderable {
     func render(model: Any?)
 }
+
 public protocol YYComponent: YYRenderable {
     
 }

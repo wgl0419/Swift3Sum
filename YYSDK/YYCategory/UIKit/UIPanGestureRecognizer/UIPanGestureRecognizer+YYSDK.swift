@@ -21,7 +21,7 @@ extension UIPanGestureRecognizer {
          */
         let velocity = self.velocity(in: self.view)
         let x = velocity.x, y = velocity.y
-        print(x, y)
+        //print(x, y)
         if fabs(x) > fabs(y) {
             return x > 0 ? .right : .left
         } else if fabs(x) < fabs(y) {

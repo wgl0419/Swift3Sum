@@ -17,12 +17,6 @@ extension UITableView {
         tableFooterView = footerView
     }
     
-    public func scrollToBottom(animated: Bool = true) {
-        DispatchQueue.main.async {
-            self.setContentOffset(CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height), animated: animated)
-        }
-    }
-    
     // MARK: - 简化dequeueReusableCellWithIdentifier的使用
     /**
      简化dequeueReusableCellWithIdentifier的使用
@@ -35,6 +29,24 @@ extension UITableView {
     }
 }
 
+// MARK: - registerCell
+extension UITableView {
+    public func registerCell(class cellClass: AnyClass?, nibName: String?) {
+        if let nibName = nibName {
+            registerNib(nibName)
+        } else if let cellClass = cellClass {
+            registerClass(cellClass)
+        }
+    }
+    
+    public func registerClass(_ cellClass: AnyClass) {
+        register(cellClass, forCellReuseIdentifier: cellClass.className)
+    }
+    
+    public func registerNib(_ nibName: String) {
+        register(UINib(nibName: nibName, bundle: nil), forCellReuseIdentifier: nibName)
+    }
+}
 
 
 

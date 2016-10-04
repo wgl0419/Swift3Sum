@@ -14,7 +14,7 @@ class ThirdLibDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
-            LibDemoInfo(title: "ThirdLibDemo", desc: "ThirdLibDemo", controllerName: "TheBasicsDemo"),
+            LibDemoInfo(title: "ReduxDemo", desc: "使用ReSwift实现Redux架构", controllerName: "ReduxDemo"),
         ]
     }
 }

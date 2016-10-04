@@ -20,9 +20,9 @@ extension NSObject {
          关于更多地关于 print 和 debugPrint 的细节，
          可以参考 http://swifter.tips/print/
          */
-        //        return self.description()
-        
-        return NSStringFromClass(self).components(separatedBy: ".").last!
+//        return self.description()
+//        return NSStringFromClass(self).components(separatedBy: ".").last!
+        return String(describing: self.self)
     }
     
     public var className: String {

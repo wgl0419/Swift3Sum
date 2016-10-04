@@ -19,7 +19,7 @@ extension YYAnimation {
     static let Duration = 0.3
     static let ZoomScaleOffset = CGFloat(0.2)
     
-    static func animate(withView view: UIView, duration: TimeInterval = Duration, delay: TimeInterval = 0, type: YYAnimation = .none, completion: ((Bool) -> Void)? = nil) {
+    public static func animate(withView view: UIView, duration: TimeInterval = Duration, delay: TimeInterval = 0, type: YYAnimation = .none, completion: ((Bool) -> Void)? = nil) {
         var options: UIViewAnimationOptions = []
         var animations: () -> Void = {}
         switch type {

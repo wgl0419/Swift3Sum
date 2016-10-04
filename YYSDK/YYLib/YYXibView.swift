@@ -8,10 +8,10 @@
 
 import UIKit
 
-public class YYXibView: YYView {
+open class YYXibView: YYView {
     public weak var xibContentView: UIView?
     
-    public override func willMove(toSuperview newSuperview: UIView?) {
+    open override func willMove(toSuperview newSuperview: UIView?) {
         if newSuperview != nil && xibContentView == nil {
             loadXibView()
         }

@@ -35,3 +35,23 @@ extension UIScrollView {
         return overflowing
     }
 }
+
+// MARK: - scroll
+
+extension UIScrollView {
+    public func scrollToTop(animated: Bool = true) {
+        setContentOffset(CGPoint.zero, animated: animated)
+    }
+    
+    public func scrollToBottom(animated: Bool = true) {
+        DispatchQueue.main.async {
+            self.setContentOffset(CGPoint(x: 0, y: self.contentSize.height - self.bounds.size.height), animated: animated)
+        }
+    }
+}
+
+
+
+
+
+

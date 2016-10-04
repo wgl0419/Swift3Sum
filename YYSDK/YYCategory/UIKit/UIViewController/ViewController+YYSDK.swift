@@ -10,16 +10,16 @@ import UIKit
 
 extension UIViewController {
     public func extendedLayoutNone() {
-        self.edgesForExtendedLayout = []
-        self.automaticallyAdjustsScrollViewInsets = false
+        edgesForExtendedLayout = []
+        automaticallyAdjustsScrollViewInsets = false
     }
     
     // MARK: - ChildVC相关
     public func addChildViewController(_ childController: UIViewController, toSubView: Bool = false, fillSuperViewConstraint: Bool = false) {
-        self.addChildViewController(childController)
+        addChildViewController(childController)
         if toSubView {
-            self.view.addSubview(childController.view)
-            childController.view.frame = self.view.frame
+            view.addSubview(childController.view)
+            childController.view.frame = view.frame
             
             if fillSuperViewConstraint {
                 childController.view.addConstraintFillSuperView()
@@ -28,7 +28,6 @@ extension UIViewController {
         childController.didMove(toParentViewController: self)
     }
 }
-
 
 // MARK: - 初始化相关
 
@@ -39,6 +38,16 @@ extension UIViewController {
         let storyboard = UIStoryboard(name: storyboardName ?? classNameString, bundle: nil)
         
         return isInitial ? storyboard.instantiateInitialViewController() : storyboard.instantiateViewController(withIdentifier: storyboardId ?? classNameString)
+    }
+}
+
+// MARK: - RightBarButtonItem
+
+var k_rightBarButtonItemAction: UInt8 = 0
+extension UIViewController {
+    public func addRightBarButtonItem(title: String, action: Selector?) {
+        let rightBarButtonItem = UIBarButtonItem(title: title, style: .plain, target: self, action: action)
+        navigationItem.rightBarButtonItem = rightBarButtonItem
     }
 }
 
@@ -72,7 +81,7 @@ extension UIViewController {
 
 // MARK: - 快速添加一个按钮
 class _YYButton: UIButton {
-    var action: ((UIButton) -> Void)! = nil
+    var action: ((UIButton) -> Void)? = nil
 }
 
 var k_buttonCount: UInt8 = 0

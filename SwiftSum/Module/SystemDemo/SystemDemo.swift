@@ -14,9 +14,9 @@ class SystemDemo: YYBaseDemoController {
         super.viewDidLoad()
         
         self.dataArray = [
-            LibDemoInfo(title: "SystemDemo", desc: "SystemDemo", controllerName: "TheBasicsDemo"),
+            LibDemoInfo(title: "UIKitDemo", desc: "常用系统控件demo", controllerName: "UIKitDemo"),
         ]
-        print(App.uniqueDeviceId)
+        
     }
     
 }

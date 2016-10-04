@@ -14,9 +14,9 @@ public struct YYDimOpitions: OptionSet {
         self.rawValue = rawValue
     }
     
-    static var dim = YYDimOpitions(rawValue: 1 << 0)//蒙版效果，黑色透明背景，否则为透明
-    static var modal = YYDimOpitions(rawValue: 1 << 1)//模态显示，禁止背后的view交互，否则不影响
-    static var dismissTaped = YYDimOpitions(rawValue: 1 << 2)//点击空白地方自动消失
+    public static var dim = YYDimOpitions(rawValue: 1 << 0)//蒙版效果，黑色透明背景，否则为透明
+    public static var modal = YYDimOpitions(rawValue: 1 << 1)//模态显示，禁止背后的view交互，否则不影响
+    public static var dismissTaped = YYDimOpitions(rawValue: 1 << 2)//点击空白地方自动消失
 }
 
 public enum YYDimAnimation {
@@ -26,47 +26,57 @@ public enum YYDimAnimation {
 }
 
 extension YYDim {
-    func show(withView view: UIView? = nil, options: YYDimOpitions = [], animationType: YYDimAnimation = .none, animations: (() -> Void)? = nil, completion: ((Bool) -> Void)? = nil) {
+    public static func show(withView view: UIView, options: YYDimOpitions = [], animationType: YYDimAnimation = .none, animations: (() -> Void)? = nil, completion: ((Bool) -> Void)? = nil) {
         
+        let dim = YYDim()
+        dim.addSubview(view)
+        view.center = dim.center
+        view.window!.addSubview(dim)
         
-        
-        YYAnimation.animate(withView: self, duration: 0, delay: 0, type: .none) { (f) in
-            
-        }
+        YYAnimation.animate(withView: view, duration: 0.4, delay: 0, type: .none, completion: completion)
+    }
+    
+    public func dismiss() {
+        showView?.removeFromSuperview()
+        self.removeFromSuperview()
     }
 }
 
 public class YYDim: UIView {
     
-    // MARK: - Const
-    
-    let HeightForCommonCell = 49
-    let CellIdentifier = "CellIdentifier"
-    
     // MARK: - Property
     
     weak var showView: UIView?
     
+    var opitions: YYDimOpitions!
+    
     // MARK: - Initialization
     
-    override public func awakeFromNib() {
-        self.setContext()
+    open override func willMove(toSuperview newSuperview: UIView?) {
+        if newSuperview != nil {
+            setupContext()
+        }
+        super.willMove(toSuperview: newSuperview)
     }
-    
-    func setContext() {
-        self.frame = UIScreen.main.bounds
+
+    func setupContext() {
+        backgroundColor = UIColor.lightGray
+        frame = UIScreen.main.bounds
     }
     
     // MARK: - Override
     
     override public func layoutSubviews() {
+        super.layoutSubviews()
         self.frame = UIScreen.main.bounds
     }
     
-    // MARK: - Private
-    
-    func _private() -> Void {
+    public override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
     }
+    
+    // MARK: - Private
+
     
     // MARK: - Public
     

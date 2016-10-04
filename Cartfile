@@ -1,5 +1,4 @@
 github "kishikawakatsumi/KeychainAccess"
-
-
-
+github "ReSwift/ReSwift"
+github "Alamofire/Alamofire"
 
