@@ -9,7 +9,7 @@
 import UIKit
 
 // MARK: - GCD的 便捷使用
-class YYGCD: NSObject {
+public class YYGCD: NSObject {
     public static let serialQueue: DispatchQueue = DispatchQueue(label: "com.yy.YYGCD")
     
     public class func mainQueue() -> DispatchQueue {
@@ -34,7 +34,7 @@ class YYGCD: NSObject {
 }
 
 // MARK: - 常规的便捷用法
-extension YYGCD {
+public extension YYGCD {
     public static func dispatchInSerialQueue(delay millisecond: Int = 0, async: Bool = true, task: @escaping () -> Void) {
         dispatch(inQueue: serialQueue, async: async, delay: millisecond, task: task)
     }
@@ -58,7 +58,7 @@ extension YYGCD {
 private extension YYGCD {
     static func dispatch(inQueue queue: DispatchQueue, async: Bool, delay milliseconds: Int, task: @escaping () -> Void) {
         if milliseconds > 0 {
-            let deadlineTime = DispatchTime.now() + .seconds(milliseconds * 1000)
+            let deadlineTime = DispatchTime.now() + .milliseconds(milliseconds)
             queue.asyncAfter(deadline: deadlineTime, execute: task)
         } else {
             async ? queue.async(execute: task) : queue.sync(execute: task)

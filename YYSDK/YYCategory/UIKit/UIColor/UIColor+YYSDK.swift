@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    public static func random() -> UIColor {
+    public static var random: UIColor {
         return UIColor(colorLiteralRed: Float(arc4random_uniform(256))/255.0, green: Float(arc4random_uniform(256))/255.0, blue: Float(arc4random_uniform(256))/255.0, alpha: 1)
     }
 }

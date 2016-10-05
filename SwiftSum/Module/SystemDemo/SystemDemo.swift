@@ -15,6 +15,7 @@ class SystemDemo: YYBaseDemoController {
         
         self.dataArray = [
             LibDemoInfo(title: "UIKitDemo", desc: "常用系统控件demo", controllerName: "UIKitDemo"),
+            LibDemoInfo(title: "CoreAnimationDemo", desc: "核心动画高级技巧", controllerName: "CoreAnimationDemo"),
         ]
         
     }
