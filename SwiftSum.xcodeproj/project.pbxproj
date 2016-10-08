@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0659B71DA751A500C65EA1 /* ExpliciteAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0659B51DA751A500C65EA1 /* ExpliciteAnimationDemo.swift */; };
+		EE0659B81DA751A500C65EA1 /* ExpliciteAnimationDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE0659B61DA751A500C65EA1 /* ExpliciteAnimationDemo.xib */; };
 		EE11E4751D816A880097822F /* YYEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11E4711D816A880097822F /* YYEnum.swift */; };
 		EE11E4761D816A880097822F /* YYProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11E4721D816A880097822F /* YYProtocol.swift */; };
 		EE11E4771D816A880097822F /* YYStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11E4731D816A880097822F /* YYStruct.swift */; };
@@ -98,6 +100,8 @@
 		EE9CA9971DA4A4F40020CDDD /* TransformDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9CA9931DA4A4F40020CDDD /* TransformDemo.xib */; };
 		EE9CA9991DA4EBBE0020CDDD /* ImplicitAnimationsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CA9981DA4EBBE0020CDDD /* ImplicitAnimationsDemo.swift */; };
 		EE9CA99C1DA4EC1C0020CDDD /* ImplicitAnimationsDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9CA99B1DA4EC1C0020CDDD /* ImplicitAnimationsDemo.xib */; };
+		EE9CA99E1DA5323D0020CDDD /* SwiftTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CA99D1DA5323D0020CDDD /* SwiftTips.swift */; };
+		EE9CA9A21DA547DA0020CDDD /* AlamofireDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CA9A11DA547DA0020CDDD /* AlamofireDemo.swift */; };
 		EEAC1C031D9A25E600A40191 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC1C021D9A25E600A40191 /* AppInfo.swift */; };
 		EEAC1C061D9A4EE100A40191 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */; };
 		EEAC1C0A1D9A64F200A40191 /* YYNoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAC1C091D9A64F200A40191 /* YYNoDataView.swift */; };
@@ -110,6 +114,7 @@
 		EEBBD83A1D9CB2A80054172F /* YYHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBBD8391D9CB2A80054172F /* YYHttp.swift */; };
 		EEBE86F81D82885B005B8CA7 /* YYXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE86F71D82885B005B8CA7 /* YYXibView.swift */; };
 		EEBE86FA1D828966005B8CA7 /* YYRefreshDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBE86F91D828966005B8CA7 /* YYRefreshDemo.xib */; };
+		EEC21B181DA8A086008D91FD /* CoreAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */; };
 		EEDC25371D9CC32200CE6D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 		EEDC25391D9CC3BC00CE6D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 		EEF3D1341D8D842D00A22B5C /* UINavigationBar+YYSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */; };
@@ -144,6 +149,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE0659B51DA751A500C65EA1 /* ExpliciteAnimationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpliciteAnimationDemo.swift; sourceTree = "<group>"; };
+		EE0659B61DA751A500C65EA1 /* ExpliciteAnimationDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpliciteAnimationDemo.xib; sourceTree = "<group>"; };
 		EE11E4711D816A880097822F /* YYEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEnum.swift; sourceTree = "<group>"; };
 		EE11E4721D816A880097822F /* YYProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYProtocol.swift; sourceTree = "<group>"; };
 		EE11E4731D816A880097822F /* YYStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYStruct.swift; sourceTree = "<group>"; };
@@ -238,6 +245,8 @@
 		EE9CA9931DA4A4F40020CDDD /* TransformDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformDemo.xib; sourceTree = "<group>"; };
 		EE9CA9981DA4EBBE0020CDDD /* ImplicitAnimationsDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImplicitAnimationsDemo.swift; sourceTree = "<group>"; };
 		EE9CA99B1DA4EC1C0020CDDD /* ImplicitAnimationsDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImplicitAnimationsDemo.xib; sourceTree = "<group>"; };
+		EE9CA99D1DA5323D0020CDDD /* SwiftTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftTips.swift; sourceTree = "<group>"; };
+		EE9CA9A11DA547DA0020CDDD /* AlamofireDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireDemo.swift; sourceTree = "<group>"; };
 		EEAC1C021D9A25E600A40191 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		EEAC1C091D9A64F200A40191 /* YYNoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYNoDataView.swift; sourceTree = "<group>"; };
@@ -251,6 +260,7 @@
 		EEBBD8391D9CB2A80054172F /* YYHttp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHttp.swift; sourceTree = "<group>"; };
 		EEBE86F71D82885B005B8CA7 /* YYXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYXibView.swift; sourceTree = "<group>"; };
 		EEBE86F91D828966005B8CA7 /* YYRefreshDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYRefreshDemo.xib; sourceTree = "<group>"; };
+		EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoreAnimation.xcassets; sourceTree = "<group>"; };
 		EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+YYSDK.swift"; sourceTree = "<group>"; };
 		EEF501D31D815AB800FF90B0 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF501F71D815EA500FF90B0 /* YYSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +292,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE0659B91DA751A900C65EA1 /* 8-显式动画 */ = {
+			isa = PBXGroup;
+			children = (
+				EE0659B51DA751A500C65EA1 /* ExpliciteAnimationDemo.swift */,
+				EE0659B61DA751A500C65EA1 /* ExpliciteAnimationDemo.xib */,
+			);
+			name = "8-显式动画";
+			sourceTree = "<group>";
+		};
 		EE11E4701D816A880097822F /* YYFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +400,7 @@
 				EE38FD1A1D9BC002004CC33E /* ReSwiftDemo */,
 				EE28CFEA1D8177690050C962 /* ThirdLibDemo.storyboard */,
 				EE28CFEB1D8177690050C962 /* ThirdLibDemo.swift */,
+				EE9CA9A31DA547DE0020CDDD /* Alamofire */,
 			);
 			path = ThirdLibDemo;
 			sourceTree = "<group>";
@@ -739,6 +759,7 @@
 				EEAE0E171D86F4EF00981405 /* Swift官方指导 */,
 				EEAE0E0C1D8506DF00981405 /* SwiftLearn.swift */,
 				EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */,
+				EE9CA99F1DA538B70020CDDD /* Swift编程技巧 */,
 			);
 			path = SwiftLearnDemo;
 			sourceTree = "<group>";
@@ -794,6 +815,8 @@
 			isa = PBXGroup;
 			children = (
 				EE9CA97D1DA3E3FE0020CDDD /* CoreAnimationDemo.swift */,
+				EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */,
+				EE0659B91DA751A900C65EA1 /* 8-显式动画 */,
 				EE9CA99A1DA4EBC20020CDDD /* 7-隐式动画 */,
 				EE9CA98F1DA4A4F40020CDDD /* 5-转换 */,
 				EE9CA98A1DA495850020CDDD /* 4-视觉效果 */,
@@ -839,6 +862,22 @@
 				EE9CA99B1DA4EC1C0020CDDD /* ImplicitAnimationsDemo.xib */,
 			);
 			name = "7-隐式动画";
+			sourceTree = "<group>";
+		};
+		EE9CA99F1DA538B70020CDDD /* Swift编程技巧 */ = {
+			isa = PBXGroup;
+			children = (
+				EE9CA99D1DA5323D0020CDDD /* SwiftTips.swift */,
+			);
+			name = "Swift编程技巧";
+			sourceTree = "<group>";
+		};
+		EE9CA9A31DA547DE0020CDDD /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				EE9CA9A11DA547DA0020CDDD /* AlamofireDemo.swift */,
+			);
+			name = Alamofire;
 			sourceTree = "<group>";
 		};
 		EEAC1C041D9A4EE000A40191 /* Frameworks */ = {
@@ -1050,6 +1089,7 @@
 				EE9CA98E1DA495850020CDDD /* VisualEffectsDemo.xib in Resources */,
 				EE9CA9771DA0AEF90020CDDD /* DemoCell.xib in Resources */,
 				EE28CFFC1D8177690050C962 /* ThirdLibDemo.storyboard in Resources */,
+				EEC21B181DA8A086008D91FD /* CoreAnimation.xcassets in Resources */,
 				EE9CA9891DA48D9F0020CDDD /* LayerGeometryDemo.xib in Resources */,
 				EE28CFF81D8177690050C962 /* Main.storyboard in Resources */,
 				EE28CFFE1D8177690050C962 /* YYLibDemo.storyboard in Resources */,
@@ -1059,6 +1099,7 @@
 				EE28D0001D8177690050C962 /* Assets.xcassets in Resources */,
 				EE9CA99C1DA4EC1C0020CDDD /* ImplicitAnimationsDemo.xib in Resources */,
 				EE38FD131D9BBFFA004CC33E /* TodoList.xib in Resources */,
+				EE0659B81DA751A500C65EA1 /* ExpliciteAnimationDemo.xib in Resources */,
 				EE38FD0F1D9BBFFA004CC33E /* TodoFooter.xib in Resources */,
 				EE28CFFA1D8177690050C962 /* SystemDemo.storyboard in Resources */,
 				EE28D0441D81788F0050C962 /* Info.plist in Resources */,
@@ -1107,6 +1148,7 @@
 				EE28CFFF1D8177690050C962 /* YYLibDemo.swift in Sources */,
 				EE38FD101D9BBFFA004CC33E /* TodoHeader.swift in Sources */,
 				EE1618C61D9D06D8001253B3 /* InnerScrollView.swift in Sources */,
+				EE0659B71DA751A500C65EA1 /* ExpliciteAnimationDemo.swift in Sources */,
 				EE9CA9721DA09A800020CDDD /* GoodsDetailViewController.swift in Sources */,
 				EE28CFF71D8177690050C962 /* YYBaseTabBarController.swift in Sources */,
 				EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */,
@@ -1131,11 +1173,13 @@
 				EE50A6D81D9CA52700B70B3F /* UIViewControllerDemo.swift in Sources */,
 				EE9CA9821DA3E4680020CDDD /* BackingImageDemo.swift in Sources */,
 				EE38FD151D9BBFFA004CC33E /* TodoListReducer.swift in Sources */,
+				EE9CA99E1DA5323D0020CDDD /* SwiftTips.swift in Sources */,
 				EE38FD1C1D9BC628004CC33E /* ReduxDemo.swift in Sources */,
 				EE28CFFB1D8177690050C962 /* SystemDemo.swift in Sources */,
 				EE9CA97A1DA0BD8B0020CDDD /* DemoCell2.swift in Sources */,
 				EE38FD161D9BBFFA004CC33E /* TodoListReduxDemo.swift in Sources */,
 				EE28CFFD1D8177690050C962 /* ThirdLibDemo.swift in Sources */,
+				EE9CA9A21DA547DA0020CDDD /* AlamofireDemo.swift in Sources */,
 				EE9CA9991DA4EBBE0020CDDD /* ImplicitAnimationsDemo.swift in Sources */,
 				EE1618C11D9D0677001253B3 /* UsefulExperienceDemo.swift in Sources */,
 				EE38FD141D9BBFFA004CC33E /* TodoListAction.swift in Sources */,

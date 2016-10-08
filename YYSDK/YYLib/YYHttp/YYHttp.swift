@@ -9,12 +9,15 @@
 import UIKit
 import Alamofire
 
-enum YYHttpMethod: String {
-    case get = "GET"
-    case post = "POST"
+public enum YYHttpMethod {
+    case get, post
 }
 
-class YYHttp {
+public class YYHttp {
+    public func request(_ url: String, method: YYHttpMethod = .get, parameters: [String : String]? = nil, headers: [String : String]? = nil, completion: @escaping (_ request: Any) -> Void) {
+        
+    }
+    
     class func request(method: YYHttpMethod = .get, urlString: String, parameters: [String : String]? = nil, headers: [String : String]? = nil, completion: @escaping (_ request: Any) -> Void) {
         
         Alamofire

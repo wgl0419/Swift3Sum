@@ -18,6 +18,7 @@ class CoreAnimationDemo: YYBaseDemoController {
             LibDemoInfo(title: "4-视觉效果", desc: "VisualEffectsDemo", controllerName: "VisualEffectsDemo"),
             LibDemoInfo(title: "5-转换", desc: "TransformDemo", controllerName: "TransformDemo"),
             LibDemoInfo(title: "7-隐式动画", desc: "ImplicitAnimationsDemo", controllerName: "ImplicitAnimationsDemo"),
+            LibDemoInfo(title: "8-显式动画", desc: "ExpliciteAnimationDemo", controllerName: "ExpliciteAnimationDemo"),
         ]
     }
 }
