@@ -19,7 +19,7 @@ class BackingImageDemo: UIViewController, CALayerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let image = UIImage(named: "contentsRect")!
+        let image = UIImage(named: "Sprites")!
         layerView.layer.contentsGravity = kCAGravityResizeAspect
         layerView.layer.contents = image.cgImage
         layerView.layer.contentsScale = image.scale

@@ -19,6 +19,7 @@ class CoreAnimationDemo: YYBaseDemoController {
             LibDemoInfo(title: "5-转换", desc: "TransformDemo", controllerName: "TransformDemo"),
             LibDemoInfo(title: "7-隐式动画", desc: "ImplicitAnimationsDemo", controllerName: "ImplicitAnimationsDemo"),
             LibDemoInfo(title: "8-显式动画", desc: "ExpliciteAnimationDemo", controllerName: "ExpliciteAnimationDemo"),
+            LibDemoInfo(title: "9-图层时间", desc: "LayerTimerDemo", controllerName: "LayerTimerDemo"),
         ]
     }
 }

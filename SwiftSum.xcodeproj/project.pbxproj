@@ -115,6 +115,8 @@
 		EEBE86F81D82885B005B8CA7 /* YYXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBE86F71D82885B005B8CA7 /* YYXibView.swift */; };
 		EEBE86FA1D828966005B8CA7 /* YYRefreshDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEBE86F91D828966005B8CA7 /* YYRefreshDemo.xib */; };
 		EEC21B181DA8A086008D91FD /* CoreAnimation.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */; };
+		EEC21B1B1DA9EC51008D91FD /* LayerTimerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC21B191DA9EC51008D91FD /* LayerTimerDemo.swift */; };
+		EEC21B1C1DA9EC52008D91FD /* LayerTimerDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC21B1A1DA9EC51008D91FD /* LayerTimerDemo.xib */; };
 		EEDC25371D9CC32200CE6D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 		EEDC25391D9CC3BC00CE6D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 		EEF3D1341D8D842D00A22B5C /* UINavigationBar+YYSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */; };
@@ -261,6 +263,8 @@
 		EEBE86F71D82885B005B8CA7 /* YYXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYXibView.swift; sourceTree = "<group>"; };
 		EEBE86F91D828966005B8CA7 /* YYRefreshDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYRefreshDemo.xib; sourceTree = "<group>"; };
 		EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoreAnimation.xcassets; sourceTree = "<group>"; };
+		EEC21B191DA9EC51008D91FD /* LayerTimerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerTimerDemo.swift; sourceTree = "<group>"; };
+		EEC21B1A1DA9EC51008D91FD /* LayerTimerDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LayerTimerDemo.xib; sourceTree = "<group>"; };
 		EEF3D1331D8D842D00A22B5C /* UINavigationBar+YYSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+YYSDK.swift"; sourceTree = "<group>"; };
 		EEF501D31D815AB800FF90B0 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF501F71D815EA500FF90B0 /* YYSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -816,6 +820,7 @@
 			children = (
 				EE9CA97D1DA3E3FE0020CDDD /* CoreAnimationDemo.swift */,
 				EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */,
+				EEC21B1D1DA9EC56008D91FD /* 9-图层时间 */,
 				EE0659B91DA751A900C65EA1 /* 8-显式动画 */,
 				EE9CA99A1DA4EBC20020CDDD /* 7-隐式动画 */,
 				EE9CA98F1DA4A4F40020CDDD /* 5-转换 */,
@@ -942,6 +947,15 @@
 				EEBBD8391D9CB2A80054172F /* YYHttp.swift */,
 			);
 			path = YYHttp;
+			sourceTree = "<group>";
+		};
+		EEC21B1D1DA9EC56008D91FD /* 9-图层时间 */ = {
+			isa = PBXGroup;
+			children = (
+				EEC21B191DA9EC51008D91FD /* LayerTimerDemo.swift */,
+				EEC21B1A1DA9EC51008D91FD /* LayerTimerDemo.xib */,
+			);
+			name = "9-图层时间";
 			sourceTree = "<group>";
 		};
 		EEF501CA1D815AB800FF90B0 = {
@@ -1087,6 +1101,7 @@
 				EE9CA9971DA4A4F40020CDDD /* TransformDemo.xib in Resources */,
 				EEBE86FA1D828966005B8CA7 /* YYRefreshDemo.xib in Resources */,
 				EE9CA98E1DA495850020CDDD /* VisualEffectsDemo.xib in Resources */,
+				EEC21B1C1DA9EC52008D91FD /* LayerTimerDemo.xib in Resources */,
 				EE9CA9771DA0AEF90020CDDD /* DemoCell.xib in Resources */,
 				EE28CFFC1D8177690050C962 /* ThirdLibDemo.storyboard in Resources */,
 				EEC21B181DA8A086008D91FD /* CoreAnimation.xcassets in Resources */,
@@ -1183,6 +1198,7 @@
 				EE9CA9991DA4EBBE0020CDDD /* ImplicitAnimationsDemo.swift in Sources */,
 				EE1618C11D9D0677001253B3 /* UsefulExperienceDemo.swift in Sources */,
 				EE38FD141D9BBFFA004CC33E /* TodoListAction.swift in Sources */,
+				EEC21B1B1DA9EC51008D91FD /* LayerTimerDemo.swift in Sources */,
 				EE9CA9941DA4A4F40020CDDD /* CubeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

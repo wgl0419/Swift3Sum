@@ -111,7 +111,7 @@ class VisualEffectsDemo: UIViewController {
     func maskDemo() {
         let maskLayer = CALayer()
         maskLayer.frame = imageViewOrigin.bounds
-        maskLayer.contents = UIImage(named: "smile")?.cgImage
+        maskLayer.contents = UIImage(named: "Cone")?.cgImage
         
         imageViewOriginMasked.image = imageViewOrigin.image
         imageViewOriginMasked.layer.mask = maskLayer
