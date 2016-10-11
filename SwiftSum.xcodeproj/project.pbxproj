@@ -82,6 +82,16 @@
 		EE478F391DAB873F009C3DC8 /* EasingDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE478F371DAB873F009C3DC8 /* EasingDemo.xib */; };
 		EE50A6D51D9CA4E800B70B3F /* UIKitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50A6D41D9CA4E800B70B3F /* UIKitDemo.swift */; };
 		EE50A6D81D9CA52700B70B3F /* UIViewControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */; };
+		EE6C672F1DACBA9600B2E5E7 /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67241DACBA9600B2E5E7 /* Game.xcassets */; };
+		EE6C67301DACBA9600B2E5E7 /* GameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C67251DACBA9600B2E5E7 /* GameDemo.swift */; };
+		EE6C67311DACBA9600B2E5E7 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67271DACBA9600B2E5E7 /* BackgroundMusic.mp3 */; };
+		EE6C67321DACBA9600B2E5E7 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67281DACBA9600B2E5E7 /* coin.wav */; };
+		EE6C67331DACBA9600B2E5E7 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67291DACBA9600B2E5E7 /* explosion.mp3 */; };
+		EE6C67341DACBA9600B2E5E7 /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE6C672A1DACBA9600B2E5E7 /* jump.wav */; };
+		EE6C67351DACBA9600B2E5E7 /* HelloScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C672C1DACBA9600B2E5E7 /* HelloScene.swift */; };
+		EE6C67361DACBA9600B2E5E7 /* Spaceship.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C672D1DACBA9600B2E5E7 /* Spaceship.swift */; };
+		EE6C67371DACBA9600B2E5E7 /* SpriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C672E1DACBA9600B2E5E7 /* SpriteViewController.swift */; };
+		EE6C67391DACC43D00B2E5E7 /* GameDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67381DACC43D00B2E5E7 /* GameDemo.storyboard */; };
 		EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */; };
 		EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E50A1D81B4DE00805249 /* YYRefreshDemo.swift */; };
 		EE71E51A1D8268ED00805249 /* YYRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EE71E5191D8268ED00805249 /* YYRefresh.bundle */; };
@@ -231,6 +241,16 @@
 		EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		EE50A6D41D9CA4E800B70B3F /* UIKitDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitDemo.swift; sourceTree = "<group>"; };
 		EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerDemo.swift; sourceTree = "<group>"; };
+		EE6C67241DACBA9600B2E5E7 /* Game.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Game.xcassets; sourceTree = "<group>"; };
+		EE6C67251DACBA9600B2E5E7 /* GameDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDemo.swift; sourceTree = "<group>"; };
+		EE6C67271DACBA9600B2E5E7 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
+		EE6C67281DACBA9600B2E5E7 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		EE6C67291DACBA9600B2E5E7 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		EE6C672A1DACBA9600B2E5E7 /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		EE6C672C1DACBA9600B2E5E7 /* HelloScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloScene.swift; sourceTree = "<group>"; };
+		EE6C672D1DACBA9600B2E5E7 /* Spaceship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spaceship.swift; sourceTree = "<group>"; };
+		EE6C672E1DACBA9600B2E5E7 /* SpriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteViewController.swift; sourceTree = "<group>"; };
+		EE6C67381DACC43D00B2E5E7 /* GameDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GameDemo.storyboard; sourceTree = "<group>"; };
 		EE71E5061D81B15E00805249 /* Swift2.2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift2.2.playground; sourceTree = "<group>"; };
 		EE71E5071D81B15E00805249 /* Swift3.0.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swift3.0.playground; sourceTree = "<group>"; };
 		EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLearnDemo.swift; sourceTree = "<group>"; };
@@ -366,6 +386,7 @@
 		EE28CFDD1D8177690050C962 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				EE6C67231DACBA9600B2E5E7 /* Game */,
 				EE28CFDE1D8177690050C962 /* Base */,
 				EE28CFE21D8177690050C962 /* Main */,
 				EE71E5051D81B15E00805249 /* SwiftLearnDemo */,
@@ -783,6 +804,39 @@
 			path = "常用系统控件demo";
 			sourceTree = "<group>";
 		};
+		EE6C67231DACBA9600B2E5E7 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				EE6C67241DACBA9600B2E5E7 /* Game.xcassets */,
+				EE6C67251DACBA9600B2E5E7 /* GameDemo.swift */,
+				EE6C67381DACC43D00B2E5E7 /* GameDemo.storyboard */,
+				EE6C67261DACBA9600B2E5E7 /* Sounds */,
+				EE6C672B1DACBA9600B2E5E7 /* SpriteKitGuide */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		EE6C67261DACBA9600B2E5E7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EE6C67271DACBA9600B2E5E7 /* BackgroundMusic.mp3 */,
+				EE6C67281DACBA9600B2E5E7 /* coin.wav */,
+				EE6C67291DACBA9600B2E5E7 /* explosion.mp3 */,
+				EE6C672A1DACBA9600B2E5E7 /* jump.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		EE6C672B1DACBA9600B2E5E7 /* SpriteKitGuide */ = {
+			isa = PBXGroup;
+			children = (
+				EE6C672C1DACBA9600B2E5E7 /* HelloScene.swift */,
+				EE6C672D1DACBA9600B2E5E7 /* Spaceship.swift */,
+				EE6C672E1DACBA9600B2E5E7 /* SpriteViewController.swift */,
+			);
+			path = SpriteKitGuide;
+			sourceTree = "<group>";
+		};
 		EE71E5051D81B15E00805249 /* SwiftLearnDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1124,7 +1178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE6C67341DACBA9600B2E5E7 /* jump.wav in Resources */,
 				EE38FD111D9BBFFA004CC33E /* TodoHeader.xib in Resources */,
+				EE6C67321DACBA9600B2E5E7 /* coin.wav in Resources */,
 				EE9CA9951DA4A4F40020CDDD /* CubeView.xib in Resources */,
 				EE9CA9971DA4A4F40020CDDD /* TransformDemo.xib in Resources */,
 				EE478F301DAA4D95009C3DC8 /* ThreeTouchDemo.xib in Resources */,
@@ -1133,12 +1189,16 @@
 				EEC21B1C1DA9EC52008D91FD /* LayerTimerDemo.xib in Resources */,
 				EE9CA9771DA0AEF90020CDDD /* DemoCell.xib in Resources */,
 				EE28CFFC1D8177690050C962 /* ThirdLibDemo.storyboard in Resources */,
+				EE6C67331DACBA9600B2E5E7 /* explosion.mp3 in Resources */,
 				EEC21B181DA8A086008D91FD /* CoreAnimation.xcassets in Resources */,
 				EE9CA9891DA48D9F0020CDDD /* LayerGeometryDemo.xib in Resources */,
 				EE28CFF81D8177690050C962 /* Main.storyboard in Resources */,
 				EE28CFFE1D8177690050C962 /* YYLibDemo.storyboard in Resources */,
 				EE38FD171D9BBFFA004CC33E /* TodoListReduxDemo.xib in Resources */,
+				EE6C67391DACC43D00B2E5E7 /* GameDemo.storyboard in Resources */,
 				EE9CA9831DA3E4680020CDDD /* BackingImageDemo.xib in Resources */,
+				EE6C67311DACBA9600B2E5E7 /* BackgroundMusic.mp3 in Resources */,
+				EE6C672F1DACBA9600B2E5E7 /* Game.xcassets in Resources */,
 				EE478F391DAB873F009C3DC8 /* EasingDemo.xib in Resources */,
 				EE28D0011D8177690050C962 /* LaunchScreen.storyboard in Resources */,
 				EE28D0001D8177690050C962 /* Assets.xcassets in Resources */,
@@ -1191,6 +1251,7 @@
 				EE9CA9881DA48D9F0020CDDD /* LayerGeometryDemo.swift in Sources */,
 				EE9CA97E1DA3E3FE0020CDDD /* CoreAnimationDemo.swift in Sources */,
 				EE28CFFF1D8177690050C962 /* YYLibDemo.swift in Sources */,
+				EE6C67361DACBA9600B2E5E7 /* Spaceship.swift in Sources */,
 				EE38FD101D9BBFFA004CC33E /* TodoHeader.swift in Sources */,
 				EE1618C61D9D06D8001253B3 /* InnerScrollView.swift in Sources */,
 				EE0659B71DA751A500C65EA1 /* ExpliciteAnimationDemo.swift in Sources */,
@@ -1198,6 +1259,7 @@
 				EE28CFF71D8177690050C962 /* YYBaseTabBarController.swift in Sources */,
 				EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */,
 				EE9CA9711DA09A800020CDDD /* GoodsDetailGraphicViewController.swift in Sources */,
+				EE6C67371DACBA9600B2E5E7 /* SpriteViewController.swift in Sources */,
 				EE38FCEC1D9B5C3E004CC33E /* YYNoDataViewDemo.swift in Sources */,
 				EEAE0E0D1D8506DF00981405 /* SwiftLearn.swift in Sources */,
 				EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */,
@@ -1214,6 +1276,7 @@
 				EE478F381DAB873F009C3DC8 /* EasingDemo.swift in Sources */,
 				EE38FD181D9BBFFA004CC33E /* TodoListDemo.swift in Sources */,
 				EE9CA96D1DA09A320020CDDD /* GoodsDetailContainerController.swift in Sources */,
+				EE6C67301DACBA9600B2E5E7 /* GameDemo.swift in Sources */,
 				EE38FD0E1D9BBFFA004CC33E /* TodoFooter.swift in Sources */,
 				EE28CFF91D8177690050C962 /* MainController.swift in Sources */,
 				EE9CA9961DA4A4F40020CDDD /* TransformDemo.swift in Sources */,
@@ -1230,6 +1293,7 @@
 				EE9CA9991DA4EBBE0020CDDD /* ImplicitAnimationsDemo.swift in Sources */,
 				EE1618C11D9D0677001253B3 /* UsefulExperienceDemo.swift in Sources */,
 				EE38FD141D9BBFFA004CC33E /* TodoListAction.swift in Sources */,
+				EE6C67351DACBA9600B2E5E7 /* HelloScene.swift in Sources */,
 				EEC21B1B1DA9EC51008D91FD /* LayerTimerDemo.swift in Sources */,
 				EE9CA9941DA4A4F40020CDDD /* CubeView.swift in Sources */,
 			);

@@ -15,6 +15,7 @@ class MainController: YYBaseTabBarController {
         TabBarItemInfo(storyBoardName: "SystemDemo", tabTitle: "SystemDemo", imageName: nil, imageNameSelected: nil),
         TabBarItemInfo(storyBoardName: "YYLibDemo", tabTitle: "YYLibDemo", imageName: nil, imageNameSelected: nil),
         TabBarItemInfo(storyBoardName: "ThirdLibDemo", tabTitle: "ThirdLibDemo", imageName: nil, imageNameSelected: nil),
+        TabBarItemInfo(storyBoardName: "GameDemo", tabTitle: "GameDemo", imageName: nil, imageNameSelected: nil),
         ]
     
     override func viewDidLoad() {

@@ -12,7 +12,7 @@ class ThirdLibDemo: YYBaseDemoController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.dataArray = [
             LibDemoInfo(title: "ReduxDemo", desc: "使用ReSwift实现Redux架构", controllerName: "ReduxDemo"),
         ]
