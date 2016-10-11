@@ -1,4 +1,31 @@
+
+#访问钥匙串
 github "kishikawakatsumi/KeychainAccess"
+
+#Redux架构模式
 github "ReSwift/ReSwift"
+
+#网络请求
 github "Alamofire/Alamofire"
+
+#转换JSON和Model
+github "alibaba/HandyJSON"
+
+#Autolayout
+github "SnapKit/SnapKit"
+
+#swift加密库, 支持md5,sha1,sha224,sha256...
+github "krzyzanowskim/CryptoSwift"
+
+#权限管理库 提供申请权限授权操作
+github "nickoneill/PermissionScope"
+
+#对Swift标准库， Foundation， UIKit 提供了很多高级扩展函数
+github "goktugyil/EZSwiftExtensions"
+
+#异步下载和缓存图片的库 类似于SDWebImage
+github "onevcat/Kingfisher"
+
+#swift面向切面编程（AOP）库 【Method Swizzling】
+github "steipete/Aspects"
 

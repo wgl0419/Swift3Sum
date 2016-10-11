@@ -75,7 +75,7 @@ class AlamofireDemo: UIViewController {
     // MARK: - 下载文件
     func download() {
         let url = "https://httpbin.org/stream/100"
-        Alamofire
+        _ = Alamofire
         .download(url, method: .get, parameters: nil, headers: nil) { (temporaryUrl, response) -> (destinationURL: URL, options: DownloadRequest.DownloadOptions) in
             let fileManager = FileManager.default
             let directoryUrl = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first

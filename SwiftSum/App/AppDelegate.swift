@@ -16,7 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        ThreeTouchDemo.setupHomeScreenQuickActions()
         return true
+    }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        ThreeTouchDemo.performActionFor(shortcutItem, completionHandler: completionHandler)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

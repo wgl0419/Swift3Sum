@@ -76,6 +76,10 @@
 		EE38FD181D9BBFFA004CC33E /* TodoListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38FD0C1D9BBFFA004CC33E /* TodoListDemo.swift */; };
 		EE38FD191D9BBFFA004CC33E /* TodoListDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE38FD0D1D9BBFFA004CC33E /* TodoListDemo.xib */; };
 		EE38FD1C1D9BC628004CC33E /* ReduxDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38FD1B1D9BC628004CC33E /* ReduxDemo.swift */; };
+		EE478F2F1DAA4D95009C3DC8 /* ThreeTouchDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE478F2D1DAA4D95009C3DC8 /* ThreeTouchDemo.swift */; };
+		EE478F301DAA4D95009C3DC8 /* ThreeTouchDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE478F2E1DAA4D95009C3DC8 /* ThreeTouchDemo.xib */; };
+		EE478F381DAB873F009C3DC8 /* EasingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE478F361DAB873F009C3DC8 /* EasingDemo.swift */; };
+		EE478F391DAB873F009C3DC8 /* EasingDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE478F371DAB873F009C3DC8 /* EasingDemo.xib */; };
 		EE50A6D51D9CA4E800B70B3F /* UIKitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50A6D41D9CA4E800B70B3F /* UIKitDemo.swift */; };
 		EE50A6D81D9CA52700B70B3F /* UIViewControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */; };
 		EE71E5091D81B15E00805249 /* SwiftLearnDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE71E5081D81B15E00805249 /* SwiftLearnDemo.swift */; };
@@ -220,6 +224,10 @@
 		EE38FD0C1D9BBFFA004CC33E /* TodoListDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListDemo.swift; sourceTree = "<group>"; };
 		EE38FD0D1D9BBFFA004CC33E /* TodoListDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoListDemo.xib; sourceTree = "<group>"; };
 		EE38FD1B1D9BC628004CC33E /* ReduxDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxDemo.swift; sourceTree = "<group>"; };
+		EE478F2D1DAA4D95009C3DC8 /* ThreeTouchDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeTouchDemo.swift; sourceTree = "<group>"; };
+		EE478F2E1DAA4D95009C3DC8 /* ThreeTouchDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeTouchDemo.xib; sourceTree = "<group>"; };
+		EE478F361DAB873F009C3DC8 /* EasingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingDemo.swift; sourceTree = "<group>"; };
+		EE478F371DAB873F009C3DC8 /* EasingDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EasingDemo.xib; sourceTree = "<group>"; };
 		EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		EE50A6D41D9CA4E800B70B3F /* UIKitDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitDemo.swift; sourceTree = "<group>"; };
 		EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerDemo.swift; sourceTree = "<group>"; };
@@ -393,6 +401,7 @@
 				EE50A6D61D9CA4F200B70B3F /* 常用系统控件demo */,
 				EE28CFE71D8177690050C962 /* SystemDemo.storyboard */,
 				EE28CFE81D8177690050C962 /* SystemDemo.swift */,
+				EE478F311DAA4D9A009C3DC8 /* 3DTouchDemo */,
 				EE9CA9841DA3E47C0020CDDD /* 核心动画高级技巧 */,
 			);
 			path = SystemDemo;
@@ -747,6 +756,24 @@
 			path = ReSwiftDemo;
 			sourceTree = "<group>";
 		};
+		EE478F311DAA4D9A009C3DC8 /* 3DTouchDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EE478F2D1DAA4D95009C3DC8 /* ThreeTouchDemo.swift */,
+				EE478F2E1DAA4D95009C3DC8 /* ThreeTouchDemo.xib */,
+			);
+			name = 3DTouchDemo;
+			sourceTree = "<group>";
+		};
+		EE478F3A1DAB8744009C3DC8 /* 10-缓冲 */ = {
+			isa = PBXGroup;
+			children = (
+				EE478F361DAB873F009C3DC8 /* EasingDemo.swift */,
+				EE478F371DAB873F009C3DC8 /* EasingDemo.xib */,
+			);
+			name = "10-缓冲";
+			sourceTree = "<group>";
+		};
 		EE50A6D61D9CA4F200B70B3F /* 常用系统控件demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -820,6 +847,7 @@
 			children = (
 				EE9CA97D1DA3E3FE0020CDDD /* CoreAnimationDemo.swift */,
 				EEC21B171DA8A086008D91FD /* CoreAnimation.xcassets */,
+				EE478F3A1DAB8744009C3DC8 /* 10-缓冲 */,
 				EEC21B1D1DA9EC56008D91FD /* 9-图层时间 */,
 				EE0659B91DA751A900C65EA1 /* 8-显式动画 */,
 				EE9CA99A1DA4EBC20020CDDD /* 7-隐式动画 */,
@@ -1099,6 +1127,7 @@
 				EE38FD111D9BBFFA004CC33E /* TodoHeader.xib in Resources */,
 				EE9CA9951DA4A4F40020CDDD /* CubeView.xib in Resources */,
 				EE9CA9971DA4A4F40020CDDD /* TransformDemo.xib in Resources */,
+				EE478F301DAA4D95009C3DC8 /* ThreeTouchDemo.xib in Resources */,
 				EEBE86FA1D828966005B8CA7 /* YYRefreshDemo.xib in Resources */,
 				EE9CA98E1DA495850020CDDD /* VisualEffectsDemo.xib in Resources */,
 				EEC21B1C1DA9EC52008D91FD /* LayerTimerDemo.xib in Resources */,
@@ -1110,6 +1139,7 @@
 				EE28CFFE1D8177690050C962 /* YYLibDemo.storyboard in Resources */,
 				EE38FD171D9BBFFA004CC33E /* TodoListReduxDemo.xib in Resources */,
 				EE9CA9831DA3E4680020CDDD /* BackingImageDemo.xib in Resources */,
+				EE478F391DAB873F009C3DC8 /* EasingDemo.xib in Resources */,
 				EE28D0011D8177690050C962 /* LaunchScreen.storyboard in Resources */,
 				EE28D0001D8177690050C962 /* Assets.xcassets in Resources */,
 				EE9CA99C1DA4EC1C0020CDDD /* ImplicitAnimationsDemo.xib in Resources */,
@@ -1176,10 +1206,12 @@
 				EE28CFF31D8177690050C962 /* AppDelegate.swift in Sources */,
 				EE1618C41D9D06CD001253B3 /* NestedScrollViewDemo.swift in Sources */,
 				EE28CFF61D8177690050C962 /* YYBaseNavigationController.swift in Sources */,
+				EE478F2F1DAA4D95009C3DC8 /* ThreeTouchDemo.swift in Sources */,
 				EE9CA9761DA0AEF90020CDDD /* DemoCell.swift in Sources */,
 				EE28CFF51D8177690050C962 /* YYBaseDemoController.swift in Sources */,
 				EE50A6D51D9CA4E800B70B3F /* UIKitDemo.swift in Sources */,
 				EE38FD121D9BBFFA004CC33E /* TodoList.swift in Sources */,
+				EE478F381DAB873F009C3DC8 /* EasingDemo.swift in Sources */,
 				EE38FD181D9BBFFA004CC33E /* TodoListDemo.swift in Sources */,
 				EE9CA96D1DA09A320020CDDD /* GoodsDetailContainerController.swift in Sources */,
 				EE38FD0E1D9BBFFA004CC33E /* TodoFooter.swift in Sources */,
