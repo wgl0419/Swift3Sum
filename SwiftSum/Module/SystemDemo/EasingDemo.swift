@@ -16,6 +16,10 @@ class EasingDemo: UIViewController {
         addButtonToView(title: "改变颜色") { [weak self](_) in
             self?.changColor()
         }
+        
+        addButtonToView(title: "小球弹跳动画") { [weak self](_) in
+            self?.ballAnimation()
+        }
     }
 
     // MARK: - 动画速度
@@ -120,7 +124,111 @@ class EasingDemo: UIViewController {
      
      曲线的起始和终点始终是{0, 0}和{1, 1}，于是我们只需要检索曲线的第二个和第三个点（控制点）。
      */
+    
+    //将kCAMediaTimingFunctionEaseOut函数的缓冲曲线画出来
+    lazy var shapeLayer: CAShapeLayer = {
+        //get control points
+        let function = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        var controlPonit1 = CGPoint.zero
+        var controlPonit2 = CGPoint.zero
+//        function.getControlPoint(at: 1, values: &controlPonit1)
+//        function.getControlPoint(at: 2, values: &controlPonit2)
+        
+        //create curve
+        let path = UIBezierPath()
+        path.move(to: .zero)
+        path.addCurve(to: CGPoint(x: 1, y: 1), controlPoint1: controlPonit1, controlPoint2: controlPonit2)
+        
+        //scale the path up to a reasonable size for display
+        path.apply(CGAffineTransform(scaleX: 200, y: 200))
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = UIColor.red.cgColor
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.lineWidth = 4
+        shapeLayer.path = path.cgPath
+        self.view.layer.addSublayer(shapeLayer)
+        
+        //flip geometry so that 0,0 is in the bottom-left
+        self.view.layer.isGeometryFlipped = true
+        return shapeLayer
+    }()
+    
+    //对于我们自定义时钟指针的缓冲函数来说，我们需要初始微弱，然后迅速上升，最后缓冲到终点的曲线，通过一些实验之后，最终结果如下：
+    let customTimingFunction = CAMediaTimingFunction(controlPoints: 1, 0, 0.75, 1)
+    
+    // MARK: - 更加复杂的动画曲线
+    
+    /*
+     考虑一个橡胶球掉落到坚硬的地面的场景，当开始下落的时候，它会持续加速知道落到地面，然后经过几次反弹，最后停下来。
+     
+     这种效果没法用一个简单的三次贝塞尔曲线表示，于是不能用CAMediaTimingFunction来完成。但如果想要实现这样的效果，可以用如下几种方法：
+     
+     1. 用CAKeyframeAnimation创建一个动画，然后分割成几个步骤，每个小步骤使用自己的计时函数。
+     2. 使用定时器逐帧更新实现动画（见第11章，“基于定时器的动画”）。
+     */
+    
+    // MARK: - 基于关键帧的缓冲
+    
+    /*
+     为了使用关键帧实现反弹动画，我们需要在缓冲曲线中对每一个显著的点创建一个关键帧（在这个情况下，关键点也就是每次反弹的峰值），然后应用缓冲函数把每段曲线连接起来。同时，我们也需要通过keyTimes来指定每个关键帧的时间偏移，由于每次反弹的时间都会减少，于是关键帧并不会均匀分布。
+     */
+    lazy var ballView: UIImageView = {
+        let imageView = UIImageView()
+        let image = UIImage(named: "Ball")!
+        imageView.frame = CGRect(origin: self.view.center, size: image.size)
+        imageView.image = image
+        self.view.addSubview(imageView)
+        return imageView
+    }()
+    
+    func ballAnimation() {
+        ballView.center = CGPoint(x: 150, y: 32)
+        
+        let animation = CAKeyframeAnimation()
+        animation.keyPath = "position"
+        animation.duration = 1
+        animation.values = [
+            NSValue(cgPoint: CGPoint(x: 150, y: 32)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 268)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 140)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 268)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 220)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 268)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 250)),
+            NSValue(cgPoint: CGPoint(x: 150, y: 268)),
+        ]
+        animation.timingFunctions = [
+             CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn),
+              CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut),
+              CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn),
+              CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut),
+              CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn),
+              CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut),
+              CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn),
+        ]
+        animation.keyTimes = [0.0, 0.3, 0.5, 0.7, 0.8, 0.9, 0.95, 1.0]
+        ballView.layer.position =  CGPoint(x: 150, y: 268)
+        ballView.layer.add(animation, forKey: nil)
+    }
+    
+    // MARK: - 流程自动化
+    
+    /*
+     在清单10.6中，我们把动画分割成相当大的几块，然后用Core Animation的缓冲进入和缓冲退出函数来大约形成我们想要的曲线。
+     但如果我们把动画分割成更小的几部分，那么我们就可以用直线来拼接这些曲线（也就是线性缓冲）。为了实现自动化，我们需要知道如何做如下两件事情：
+     
+     - 自动把任意属性动画分割成多个关键帧
+     - 用一个数学函数表示弹性动画，使得可以对帧做便宜
+
+     */
+
 }
+
+
+
+
+
 
 
 
