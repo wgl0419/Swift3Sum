@@ -82,6 +82,10 @@
 		EE478F391DAB873F009C3DC8 /* EasingDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE478F371DAB873F009C3DC8 /* EasingDemo.xib */; };
 		EE50A6D51D9CA4E800B70B3F /* UIKitDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50A6D41D9CA4E800B70B3F /* UIKitDemo.swift */; };
 		EE50A6D81D9CA52700B70B3F /* UIViewControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */; };
+		EE518BAE1DACF6FE00DC7002 /* FunctionalDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE518BAD1DACF6FE00DC7002 /* FunctionalDemo.swift */; };
+		EE518BB11DACF73F00DC7002 /* CoreImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE518BB01DACF73F00DC7002 /* CoreImageDemo.swift */; };
+		EE518BB31DAD31C300DC7002 /* YYEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE518BB21DAD31C300DC7002 /* YYEnvironment.swift */; };
+		EE518BB61DAD35AB00DC7002 /* YYLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE518BB51DAD35AB00DC7002 /* YYLogger.swift */; };
 		EE6C672F1DACBA9600B2E5E7 /* Game.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67241DACBA9600B2E5E7 /* Game.xcassets */; };
 		EE6C67301DACBA9600B2E5E7 /* GameDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6C67251DACBA9600B2E5E7 /* GameDemo.swift */; };
 		EE6C67311DACBA9600B2E5E7 /* BackgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EE6C67271DACBA9600B2E5E7 /* BackgroundMusic.mp3 */; };
@@ -241,6 +245,10 @@
 		EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		EE50A6D41D9CA4E800B70B3F /* UIKitDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitDemo.swift; sourceTree = "<group>"; };
 		EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerDemo.swift; sourceTree = "<group>"; };
+		EE518BAD1DACF6FE00DC7002 /* FunctionalDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalDemo.swift; sourceTree = "<group>"; };
+		EE518BB01DACF73F00DC7002 /* CoreImageDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImageDemo.swift; sourceTree = "<group>"; };
+		EE518BB21DAD31C300DC7002 /* YYEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYEnvironment.swift; sourceTree = "<group>"; };
+		EE518BB51DAD35AB00DC7002 /* YYLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYLogger.swift; sourceTree = "<group>"; };
 		EE6C67241DACBA9600B2E5E7 /* Game.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Game.xcassets; sourceTree = "<group>"; };
 		EE6C67251DACBA9600B2E5E7 /* GameDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDemo.swift; sourceTree = "<group>"; };
 		EE6C67271DACBA9600B2E5E7 /* BackgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BackgroundMusic.mp3; sourceTree = "<group>"; };
@@ -345,6 +353,46 @@
 			path = YYFoundation;
 			sourceTree = "<group>";
 		};
+		EE12C3901DADDA8F00BDCDD5 /* YYLogger */ = {
+			isa = PBXGroup;
+			children = (
+				EE518BB51DAD35AB00DC7002 /* YYLogger.swift */,
+			);
+			name = YYLogger;
+			sourceTree = "<group>";
+		};
+		EE12C3911DADDAAD00BDCDD5 /* YYRenderableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				EE1618D21D9D2812001253B3 /* YYRenderableTableView.swift */,
+			);
+			name = YYRenderableTableView;
+			sourceTree = "<group>";
+		};
+		EE12C3921DADDAD200BDCDD5 /* YYXibView */ = {
+			isa = PBXGroup;
+			children = (
+				EEBE86F71D82885B005B8CA7 /* YYXibView.swift */,
+			);
+			name = YYXibView;
+			sourceTree = "<group>";
+		};
+		EE12C3931DADDADF00BDCDD5 /* YYDim */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE0E061D84FC3400981405 /* YYDim.swift */,
+			);
+			name = YYDim;
+			sourceTree = "<group>";
+		};
+		EE12C3941DADDAEA00BDCDD5 /* YYAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE0E081D84FFA200981405 /* YYAnimation.swift */,
+			);
+			name = YYAnimation;
+			sourceTree = "<group>";
+		};
 		EE1618C21D9D067A001253B3 /* 实用经验技巧 */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +472,7 @@
 				EE28CFE81D8177690050C962 /* SystemDemo.swift */,
 				EE478F311DAA4D9A009C3DC8 /* 3DTouchDemo */,
 				EE9CA9841DA3E47C0020CDDD /* 核心动画高级技巧 */,
+				EE518BAF1DACF71300DC7002 /* 函数式编程 */,
 			);
 			path = SystemDemo;
 			sourceTree = "<group>";
@@ -674,10 +723,12 @@
 				EEAE0E031D84FB0600981405 /* YYImageBrowser */,
 				EEAC1C0B1D9A64F700A40191 /* YYNoDataView */,
 				EE28D04A1D817A840050C962 /* YYRefresh */,
-				EEAE0E081D84FFA200981405 /* YYAnimation.swift */,
-				EEAE0E061D84FC3400981405 /* YYDim.swift */,
-				EE1618D21D9D2812001253B3 /* YYRenderableTableView.swift */,
-				EEBE86F71D82885B005B8CA7 /* YYXibView.swift */,
+				EE12C3941DADDAEA00BDCDD5 /* YYAnimation */,
+				EE12C3931DADDADF00BDCDD5 /* YYDim */,
+				EE12C3911DADDAAD00BDCDD5 /* YYRenderableTableView */,
+				EE12C3921DADDAD200BDCDD5 /* YYXibView */,
+				EE12C3901DADDA8F00BDCDD5 /* YYLogger */,
+				EE518BB41DAD31CB00DC7002 /* YYEnvironment */,
 			);
 			path = YYLib;
 			sourceTree = "<group>";
@@ -802,6 +853,23 @@
 				EE50A6D71D9CA52700B70B3F /* UIViewControllerDemo.swift */,
 			);
 			path = "常用系统控件demo";
+			sourceTree = "<group>";
+		};
+		EE518BAF1DACF71300DC7002 /* 函数式编程 */ = {
+			isa = PBXGroup;
+			children = (
+				EE518BAD1DACF6FE00DC7002 /* FunctionalDemo.swift */,
+				EE518BB01DACF73F00DC7002 /* CoreImageDemo.swift */,
+			);
+			name = "函数式编程";
+			sourceTree = "<group>";
+		};
+		EE518BB41DAD31CB00DC7002 /* YYEnvironment */ = {
+			isa = PBXGroup;
+			children = (
+				EE518BB21DAD31C300DC7002 /* YYEnvironment.swift */,
+			);
+			name = YYEnvironment;
 			sourceTree = "<group>";
 		};
 		EE6C67231DACBA9600B2E5E7 /* Game */ = {
@@ -1257,6 +1325,7 @@
 				EE0659B71DA751A500C65EA1 /* ExpliciteAnimationDemo.swift in Sources */,
 				EE9CA9721DA09A800020CDDD /* GoodsDetailViewController.swift in Sources */,
 				EE28CFF71D8177690050C962 /* YYBaseTabBarController.swift in Sources */,
+				EE518BB11DACF73F00DC7002 /* CoreImageDemo.swift in Sources */,
 				EE71E50C1D81B4DE00805249 /* YYRefreshDemo.swift in Sources */,
 				EE9CA9711DA09A800020CDDD /* GoodsDetailGraphicViewController.swift in Sources */,
 				EE6C67371DACBA9600B2E5E7 /* SpriteViewController.swift in Sources */,
@@ -1268,6 +1337,7 @@
 				EE28CFF31D8177690050C962 /* AppDelegate.swift in Sources */,
 				EE1618C41D9D06CD001253B3 /* NestedScrollViewDemo.swift in Sources */,
 				EE28CFF61D8177690050C962 /* YYBaseNavigationController.swift in Sources */,
+				EE518BAE1DACF6FE00DC7002 /* FunctionalDemo.swift in Sources */,
 				EE478F2F1DAA4D95009C3DC8 /* ThreeTouchDemo.swift in Sources */,
 				EE9CA9761DA0AEF90020CDDD /* DemoCell.swift in Sources */,
 				EE28CFF51D8177690050C962 /* YYBaseDemoController.swift in Sources */,
@@ -1306,6 +1376,7 @@
 				EE28D0391D8177B90050C962 /* UIPanGestureRecognizer+YYSDK.swift in Sources */,
 				EE28D0301D8177B90050C962 /* Date+YYSDK.swift in Sources */,
 				EEAE0E071D84FC3400981405 /* YYDim.swift in Sources */,
+				EE518BB61DAD35AB00DC7002 /* YYLogger.swift in Sources */,
 				EE28D0541D817A840050C962 /* YYRefreshFoundation.swift in Sources */,
 				EE28D0401D8177B90050C962 /* WKWebView+YYSDK.swift in Sources */,
 				EE11E4771D816A880097822F /* YYStruct.swift in Sources */,
@@ -1328,6 +1399,7 @@
 				EEAE0E0B1D85006F00981405 /* YYClosure.swift in Sources */,
 				EE28D0361D8177B90050C962 /* UIButton+YYSDK.swift in Sources */,
 				EE28D03D1D8177B90050C962 /* UIView+YYSDK.swift in Sources */,
+				EE518BB31DAD31C300DC7002 /* YYEnvironment.swift in Sources */,
 				EEAE0E0F1D865F1300981405 /* YYGCD.swift in Sources */,
 				EE28D0561D817A840050C962 /* YYView.swift in Sources */,
 				EE28D02F1D8177B90050C962 /* NSData+YYSDK.swift in Sources */,
