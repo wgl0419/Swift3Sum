@@ -2,7 +2,7 @@
 //  YYSDK.h
 //  YYSDK
 //
-//  Created by yangyuan on 2016/9/8.
+//  Created by yangyuan on 2016/10/13.
 //  Copyright © 2016年 huan. All rights reserved.
 //
 

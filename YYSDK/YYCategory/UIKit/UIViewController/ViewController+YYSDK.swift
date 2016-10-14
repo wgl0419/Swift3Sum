@@ -8,13 +8,39 @@
 
 import UIKit
 
+// MARK: - TopViewController
+
 extension UIViewController {
-    public func extendedLayoutNone() {
-        edgesForExtendedLayout = []
-        automaticallyAdjustsScrollViewInsets = false
+    //获取app当前最顶层的ViewController
+    public static var appTopViewController: UIViewController? {
+        var resultVC: UIViewController?
+        resultVC = UIApplication.shared.keyWindow?.rootViewController?.showingViewController
+        while resultVC?.presentedViewController != nil {
+            resultVC = resultVC?.presentedViewController?.showingViewController
+        }
+        return resultVC
     }
     
-    // MARK: - ChildVC相关
+    /**< 3种情况
+     1. UINavigationController.topViewController
+     2. UITabBarController.selectedViewController
+     3. UIViewController 自己
+     */
+    public var showingViewController: UIViewController? {
+        if self.isKind(of: UINavigationController.self) {
+            return (self as! UINavigationController).topViewController?.showingViewController
+        } else if self.isKind(of: UITabBarController.self) {
+            return (self as! UITabBarController).selectedViewController?.showingViewController
+        } else {
+            return self
+        }
+    }
+}
+
+// MARK: - ChildViewController相关
+
+extension UIViewController {
+    
     public func addChildViewController(_ childController: UIViewController, toSubView: Bool = false, fillSuperViewConstraint: Bool = false) {
         addChildViewController(childController)
         if toSubView {
@@ -32,6 +58,11 @@ extension UIViewController {
 // MARK: - 初始化相关
 
 extension UIViewController {
+    public func extendedLayoutNone() {
+        edgesForExtendedLayout = []
+        automaticallyAdjustsScrollViewInsets = false
+    }
+    
     //根据类名从storyboard中返回对应ViewController
     public static func instanceFromStoryboard(_ storyboardName: String? = nil, id storyboardId: String? = nil, isInitial: Bool = false) -> UIViewController? {
         let classNameString = self.className
@@ -80,12 +111,12 @@ extension UIViewController {
 
 
 // MARK: - 快速添加一个按钮
+
 class _YYButton: UIButton {
     var action: ((UIButton) -> Void)? = nil
 }
 
 var k_buttonCount: UInt8 = 0
-
 extension UIViewController {
     public var buttonCount: Int {
         get {
