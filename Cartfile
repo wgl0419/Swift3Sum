@@ -29,3 +29,5 @@ github "onevcat/Kingfisher"
 #swift面向切面编程（AOP）库 【Method Swizzling】
 github "steipete/Aspects"
 
+#方便使用JSON数据，解析
+github “SwiftyJSON/SwiftyJSON”

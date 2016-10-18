@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1F5A041DB4603400869B9A /* MonadAndFunctorDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1F5A031DB4603300869B9A /* MonadAndFunctorDemo.swift */; };
+		EE1F5A071DB49EE200869B9A /* FunctionalThoughtDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1F5A061DB49EE100869B9A /* FunctionalThoughtDemo.swift */; };
 		EE38FCFB1D9BBFBD004CC33E /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE38FCFA1D9BBFBD004CC33E /* ReSwift.framework */; };
 		EE4C2A721DAF9822008924A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C29F31DAF9822008924A3 /* AppDelegate.swift */; };
 		EE4C2A731DAF9822008924A3 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4C29F41DAF9822008924A3 /* AppInfo.swift */; };
@@ -177,6 +179,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE1F5A031DB4603300869B9A /* MonadAndFunctorDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonadAndFunctorDemo.swift; sourceTree = "<group>"; };
+		EE1F5A061DB49EE100869B9A /* FunctionalThoughtDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalThoughtDemo.swift; sourceTree = "<group>"; };
 		EE38FCFA1D9BBFBD004CC33E /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		EE4C29F31DAF9822008924A3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE4C29F41DAF9822008924A3 /* AppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
@@ -355,6 +359,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE1F5A051DB4604A00869B9A /* 单子和函子 */ = {
+			isa = PBXGroup;
+			children = (
+				EE1F5A031DB4603300869B9A /* MonadAndFunctorDemo.swift */,
+			);
+			name = "单子和函子";
+			sourceTree = "<group>";
+		};
+		EE1F5A081DB49EE800869B9A /* 1-函数式思想 */ = {
+			isa = PBXGroup;
+			children = (
+				EE1F5A061DB49EE100869B9A /* FunctionalThoughtDemo.swift */,
+			);
+			name = "1-函数式思想";
+			sourceTree = "<group>";
+		};
 		EE4C29F11DAF9822008924A3 /* SwiftSum */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +525,8 @@
 			children = (
 				EE4C2A1D1DAF9822008924A3 /* CoreImageDemo.swift */,
 				EE4C2A1E1DAF9822008924A3 /* FunctionalDemo.swift */,
+				EE1F5A081DB49EE800869B9A /* 1-函数式思想 */,
+				EE1F5A051DB4604A00869B9A /* 单子和函子 */,
 			);
 			path = "函数式编程";
 			sourceTree = "<group>";
@@ -1458,7 +1480,9 @@
 				EE4C2A8B1DAF9822008924A3 /* CoreImageDemo.swift in Sources */,
 				EE4C2AA21DAF9822008924A3 /* CoreAnimationDemo.swift in Sources */,
 				EE4C2A8C1DAF9822008924A3 /* FunctionalDemo.swift in Sources */,
+				EE1F5A041DB4603400869B9A /* MonadAndFunctorDemo.swift in Sources */,
 				EE4C2AA41DAF9822008924A3 /* ReduxDemo.swift in Sources */,
+				EE1F5A071DB49EE200869B9A /* FunctionalThoughtDemo.swift in Sources */,
 				EE4C2AB51DAF9822008924A3 /* YYNoDataViewDemo.swift in Sources */,
 				EE4C2A991DAF9822008924A3 /* TransformDemo.swift in Sources */,
 				EE4C2AAC1DAF9822008924A3 /* TodoListReducer.swift in Sources */,

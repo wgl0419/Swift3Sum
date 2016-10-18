@@ -47,6 +47,22 @@ extension YYAnimation {
     }
 }
 
+enum CABasicAnimationType: String {
+    case backgroundColor = "backgroundColor"
+    case cornerRadius = "cornerRadius"
+    case borderWidth = "borderWidth"
+    case borderColor = "borderColor"
+    case opacity = "opacity"
+    case shadowColor = "shadowColor"
+    case shadowOpacity = "shadowOpacity"
+    case shadowOffset = "shadowOffset"
+    case shadowRadius = "shadowRadius"
+    case shadowPath = "shadowPath"
+}
+
+
+
+
 
 
 

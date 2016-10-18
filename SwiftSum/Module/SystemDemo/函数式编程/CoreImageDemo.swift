@@ -19,7 +19,7 @@ class CoreImageDemo: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -144,6 +144,7 @@ func >>>(_ filter1: @escaping YYFilter, _ filter2: @escaping YYFilter) -> YYFilt
         filter2(filter1(image))
     }
 }
+
 
 
 

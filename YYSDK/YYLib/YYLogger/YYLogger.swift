@@ -10,10 +10,11 @@ import UIKit
 
 // MARK: - 公开的便捷调用
 
-/**< 默认输出 >= Info级别日志 */
+/**< 指定要显示日志的最小级别，默认输出 >= Info级别日志 */
 public func yyLogSetDefaultMiniLevel(_ level: YYLogLevel) {
     YYLogger.default.miniLevel = level
 }
+
 public func yyLog(_ level: YYLogLevel, _ items: Any, _ function: StaticString = #function, _ line: Int = #line, _ file: StaticString = #file) {
     YYLogger.default.log(level, items, function, line, file)
 }
@@ -34,7 +35,7 @@ public func yyLogFatal(_ items: Any, _ function: StaticString = #function, _ lin
 }
 
 
-/**< 日志级别 
+/**< 日志级别
  DEBUG < INFO < WARN < ERROR < FATAL，分别用来指定这条日志信息的重要程度，
  规则：只输出级别不低于设定级别的日志信息，假设Loggers级别设定为INFO，
  则INFO、WARN、ERROR和FATAL级别的日志信息都会输出，而级别比INFO低的DEBUG则不会输出。
@@ -77,6 +78,13 @@ public class YYLogger {
     //规则：只输出级别不低于设定级别的日志信息
     public var miniLevel: YYLogLevel
     
+    public var formatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.locale = Locale.current
+        return formatter
+    }()
+    
     /**< 日志在非主线程的一个串行队列中执行 */
     let serialQueue = DispatchQueue(label: "YYLogger")
     
@@ -85,7 +93,7 @@ public class YYLogger {
             return
         }
         serialQueue.async {
-            let date = Date()
+            let date = self.formatter.string(from: Date())
             // [ViewController.swift: viewDidLoad(): 24]
             let details = "[\("\(file)".components(separatedBy: "/").last!): \(function): \(line)]"
             
