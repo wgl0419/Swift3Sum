@@ -22,6 +22,7 @@ class CoreAnimationDemo: YYBaseDemoController {
             LibDemoInfo(title: "9-图层时间", desc: "LayerTimerDemo", controllerName: "LayerTimerDemo"),
             LibDemoInfo(title: "10-缓冲", desc: "EasingDemo", controllerName: "EasingDemo"),
             LibDemoInfo(title: "11-定时器的动画", desc: "TimerAnimationDemo", controllerName: "TimerAnimationDemo"),
+            LibDemoInfo(title: "12-性能调优", desc: "TuningSpeedDemo", controllerName: "TuningSpeedDemo"),
             
         ]
     }

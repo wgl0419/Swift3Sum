@@ -152,6 +152,14 @@
 		EE4C2BF51DAF9BD2008924A3 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 		EE82C1521DB5EC8D0055593D /* TimerAnimationDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C1501DB5EC8D0055593D /* TimerAnimationDemo.swift */; };
 		EE82C1531DB5EC8D0055593D /* TimerAnimationDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE82C1511DB5EC8D0055593D /* TimerAnimationDemo.xib */; };
+		EE82C1571DB716B00055593D /* TuningSpeedDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C1551DB716B00055593D /* TuningSpeedDemo.swift */; };
+		EE82C1581DB716B00055593D /* TuningSpeedDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE82C1561DB716B00055593D /* TuningSpeedDemo.xib */; };
+		EE82C1601DB721CA0055593D /* Anchor.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15A1DB721CA0055593D /* Anchor.png */; };
+		EE82C1611DB721CA0055593D /* Cone.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15B1DB721CA0055593D /* Cone.png */; };
+		EE82C1621DB721CA0055593D /* Igloo.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15C1DB721CA0055593D /* Igloo.png */; };
+		EE82C1631DB721CA0055593D /* Key.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15D1DB721CA0055593D /* Key.png */; };
+		EE82C1641DB721CA0055593D /* Snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15E1DB721CA0055593D /* Snowman.png */; };
+		EE82C1651DB721CA0055593D /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15F1DB721CA0055593D /* Spaceship.png */; };
 		EEAC1C061D9A4EE100A40191 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */; };
 		EEDC25371D9CC32200CE6D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 /* End PBXBuildFile section */
@@ -329,6 +337,14 @@
 		EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		EE82C1501DB5EC8D0055593D /* TimerAnimationDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerAnimationDemo.swift; sourceTree = "<group>"; };
 		EE82C1511DB5EC8D0055593D /* TimerAnimationDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerAnimationDemo.xib; sourceTree = "<group>"; };
+		EE82C1551DB716B00055593D /* TuningSpeedDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TuningSpeedDemo.swift; sourceTree = "<group>"; };
+		EE82C1561DB716B00055593D /* TuningSpeedDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TuningSpeedDemo.xib; sourceTree = "<group>"; };
+		EE82C15A1DB721CA0055593D /* Anchor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Anchor.png; sourceTree = "<group>"; };
+		EE82C15B1DB721CA0055593D /* Cone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cone.png; sourceTree = "<group>"; };
+		EE82C15C1DB721CA0055593D /* Igloo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Igloo.png; sourceTree = "<group>"; };
+		EE82C15D1DB721CA0055593D /* Key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Key.png; sourceTree = "<group>"; };
+		EE82C15E1DB721CA0055593D /* Snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snowman.png; sourceTree = "<group>"; };
+		EE82C15F1DB721CA0055593D /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		EEF501D31D815AB800FF90B0 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -558,6 +574,7 @@
 				EE4C2A3D1DAF9822008924A3 /* CoreAnimation.xcassets */,
 				EE4C2A3E1DAF9822008924A3 /* CoreAnimationDemo.swift */,
 				EE82C1541DB5EC910055593D /* 11-定时器的动画 */,
+				EE82C1591DB716B40055593D /* 12-性能调优 */,
 			);
 			path = "核心动画高级技巧";
 			sourceTree = "<group>";
@@ -1188,6 +1205,21 @@
 			name = "11-定时器的动画";
 			sourceTree = "<group>";
 		};
+		EE82C1591DB716B40055593D /* 12-性能调优 */ = {
+			isa = PBXGroup;
+			children = (
+				EE82C15A1DB721CA0055593D /* Anchor.png */,
+				EE82C15B1DB721CA0055593D /* Cone.png */,
+				EE82C15C1DB721CA0055593D /* Igloo.png */,
+				EE82C15D1DB721CA0055593D /* Key.png */,
+				EE82C15E1DB721CA0055593D /* Snowman.png */,
+				EE82C15F1DB721CA0055593D /* Spaceship.png */,
+				EE82C1551DB716B00055593D /* TuningSpeedDemo.swift */,
+				EE82C1561DB716B00055593D /* TuningSpeedDemo.xib */,
+			);
+			name = "12-性能调优";
+			sourceTree = "<group>";
+		};
 		EEAC1C041D9A4EE000A40191 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1338,16 +1370,20 @@
 				EE4C2A7D1DAF9822008924A3 /* explosion.mp3 in Resources */,
 				EE4C2AC11DAF9822008924A3 /* Assets.xcassets in Resources */,
 				EE4C2A901DAF9822008924A3 /* EasingDemo.xib in Resources */,
+				EE82C1621DB721CA0055593D /* Igloo.png in Resources */,
+				EE82C1641DB721CA0055593D /* Snowman.png in Resources */,
 				EE4C2A9A1DAF9822008924A3 /* TransformDemo.xib in Resources */,
 				EE4C2AAE1DAF9822008924A3 /* TodoListReduxDemo.xib in Resources */,
 				EE4C2A941DAF9822008924A3 /* LayerGeometryDemo.xib in Resources */,
 				EE4C2A7C1DAF9822008924A3 /* coin.wav in Resources */,
 				EE4C2A921DAF9822008924A3 /* BackingImageDemo.xib in Resources */,
+				EE82C1651DB721CA0055593D /* Spaceship.png in Resources */,
 				EE4C2A9E1DAF9822008924A3 /* ExpliciteAnimationDemo.xib in Resources */,
 				EE4C2A741DAF9822008924A3 /* Info.plist in Resources */,
 				EE82C1531DB5EC8D0055593D /* TimerAnimationDemo.xib in Resources */,
 				EE4C2A9C1DAF9822008924A3 /* ImplicitAnimationsDemo.xib in Resources */,
 				EE4C2A891DAF9822008924A3 /* SystemDemo.storyboard in Resources */,
+				EE82C1631DB721CA0055593D /* Key.png in Resources */,
 				EE4C2A821DAF9822008924A3 /* Main.storyboard in Resources */,
 				EE4C2AAA1DAF9822008924A3 /* TodoList.xib in Resources */,
 				EE4C2AC21DAF9822008924A3 /* LaunchScreen.storyboard in Resources */,
@@ -1358,12 +1394,15 @@
 				EE4C2AB11DAF9822008924A3 /* ThirdLibDemo.storyboard in Resources */,
 				EE4C2AA81DAF9822008924A3 /* TodoHeader.xib in Resources */,
 				EE4C2A981DAF9822008924A3 /* CubeView.xib in Resources */,
+				EE82C1601DB721CA0055593D /* Anchor.png in Resources */,
 				EE4C2A7E1DAF9822008924A3 /* jump.wav in Resources */,
 				EE4C2A791DAF9822008924A3 /* GameDemo.storyboard in Resources */,
 				EE4C2A7B1DAF9822008924A3 /* BackgroundMusic.mp3 in Resources */,
 				EE4C2AA01DAF9822008924A3 /* LayerTimerDemo.xib in Resources */,
 				EE4C2A781DAF9822008924A3 /* Game.xcassets in Resources */,
+				EE82C1611DB721CA0055593D /* Cone.png in Resources */,
 				EE4C2AA11DAF9822008924A3 /* CoreAnimation.xcassets in Resources */,
+				EE82C1581DB716B00055593D /* TuningSpeedDemo.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1467,6 +1506,7 @@
 				EE4C2ABD1DAF9822008924A3 /* GoodsDetailViewController.swift in Sources */,
 				EE4C2A831DAF9822008924A3 /* MainController.swift in Sources */,
 				EE4C2A9B1DAF9822008924A3 /* ImplicitAnimationsDemo.swift in Sources */,
+				EE82C1571DB716B00055593D /* TuningSpeedDemo.swift in Sources */,
 				EE4C2A871DAF9822008924A3 /* ThreeTouchDemo.swift in Sources */,
 				EE4C2A8A1DAF9822008924A3 /* SystemDemo.swift in Sources */,
 				EE4C2AAF1DAF9822008924A3 /* TodoListDemo.swift in Sources */,

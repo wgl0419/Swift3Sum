@@ -47,7 +47,7 @@ extension YYAnimation {
     }
 }
 
-enum CABasicAnimationType: String {
+public enum CABasicAnimationType: String {
     case backgroundColor = "backgroundColor"
     case cornerRadius = "cornerRadius"
     case borderWidth = "borderWidth"
@@ -58,6 +58,12 @@ enum CABasicAnimationType: String {
     case shadowOffset = "shadowOffset"
     case shadowRadius = "shadowRadius"
     case shadowPath = "shadowPath"
+}
+
+extension CABasicAnimation {
+    public convenience init(type: CABasicAnimationType) {
+        self.init(keyPath: type.rawValue)
+    }
 }
 
 
