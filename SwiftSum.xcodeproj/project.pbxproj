@@ -160,6 +160,12 @@
 		EE82C1631DB721CA0055593D /* Key.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15D1DB721CA0055593D /* Key.png */; };
 		EE82C1641DB721CA0055593D /* Snowman.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15E1DB721CA0055593D /* Snowman.png */; };
 		EE82C1651DB721CA0055593D /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = EE82C15F1DB721CA0055593D /* Spaceship.png */; };
+		EE82C1681DB856EB0055593D /* EfficientDrawingDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C1661DB856EB0055593D /* EfficientDrawingDemo.swift */; };
+		EE82C1691DB856EB0055593D /* EfficientDrawingDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE82C1671DB856EB0055593D /* EfficientDrawingDemo.xib */; };
+		EE82C16C1DB85BBD0055593D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C16B1DB85BBD0055593D /* DrawingView.swift */; };
+		EE82C16E1DB85F360055593D /* DrawingView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C16D1DB85F360055593D /* DrawingView2.swift */; };
+		EE82C1701DB865A90055593D /* ChalkDarwing.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C16F1DB865A90055593D /* ChalkDarwing.swift */; };
+		EE82C1721DB9AB8F0055593D /* ChalkDarwing2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE82C1711DB9AB8F0055593D /* ChalkDarwing2.swift */; };
 		EEAC1C061D9A4EE100A40191 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */; };
 		EEDC25371D9CC32200CE6D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE50A6D21D9BDAAA00B70B3F /* Alamofire.framework */; };
 /* End PBXBuildFile section */
@@ -345,6 +351,12 @@
 		EE82C15D1DB721CA0055593D /* Key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Key.png; sourceTree = "<group>"; };
 		EE82C15E1DB721CA0055593D /* Snowman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Snowman.png; sourceTree = "<group>"; };
 		EE82C15F1DB721CA0055593D /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		EE82C1661DB856EB0055593D /* EfficientDrawingDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EfficientDrawingDemo.swift; sourceTree = "<group>"; };
+		EE82C1671DB856EB0055593D /* EfficientDrawingDemo.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EfficientDrawingDemo.xib; sourceTree = "<group>"; };
+		EE82C16B1DB85BBD0055593D /* DrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		EE82C16D1DB85F360055593D /* DrawingView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingView2.swift; sourceTree = "<group>"; };
+		EE82C16F1DB865A90055593D /* ChalkDarwing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChalkDarwing.swift; sourceTree = "<group>"; };
+		EE82C1711DB9AB8F0055593D /* ChalkDarwing2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChalkDarwing2.swift; sourceTree = "<group>"; };
 		EEAC1C051D9A4EE000A40191 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		EEF501D31D815AB800FF90B0 /* SwiftSum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -575,6 +587,7 @@
 				EE4C2A3E1DAF9822008924A3 /* CoreAnimationDemo.swift */,
 				EE82C1541DB5EC910055593D /* 11-定时器的动画 */,
 				EE82C1591DB716B40055593D /* 12-性能调优 */,
+				EE82C16A1DB856F70055593D /* 13-高效绘图 */,
 			);
 			path = "核心动画高级技巧";
 			sourceTree = "<group>";
@@ -1220,6 +1233,19 @@
 			name = "12-性能调优";
 			sourceTree = "<group>";
 		};
+		EE82C16A1DB856F70055593D /* 13-高效绘图 */ = {
+			isa = PBXGroup;
+			children = (
+				EE82C1661DB856EB0055593D /* EfficientDrawingDemo.swift */,
+				EE82C1671DB856EB0055593D /* EfficientDrawingDemo.xib */,
+				EE82C16B1DB85BBD0055593D /* DrawingView.swift */,
+				EE82C16D1DB85F360055593D /* DrawingView2.swift */,
+				EE82C16F1DB865A90055593D /* ChalkDarwing.swift */,
+				EE82C1711DB9AB8F0055593D /* ChalkDarwing2.swift */,
+			);
+			name = "13-高效绘图";
+			sourceTree = "<group>";
+		};
 		EEAC1C041D9A4EE000A40191 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1395,6 +1421,7 @@
 				EE4C2AA81DAF9822008924A3 /* TodoHeader.xib in Resources */,
 				EE4C2A981DAF9822008924A3 /* CubeView.xib in Resources */,
 				EE82C1601DB721CA0055593D /* Anchor.png in Resources */,
+				EE82C1691DB856EB0055593D /* EfficientDrawingDemo.xib in Resources */,
 				EE4C2A7E1DAF9822008924A3 /* jump.wav in Resources */,
 				EE4C2A791DAF9822008924A3 /* GameDemo.storyboard in Resources */,
 				EE4C2A7B1DAF9822008924A3 /* BackgroundMusic.mp3 in Resources */,
@@ -1492,6 +1519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4C2A771DAF9822008924A3 /* YYBaseTabBarController.swift in Sources */,
+				EE82C1681DB856EB0055593D /* EfficientDrawingDemo.swift in Sources */,
 				EE4C2A7F1DAF9822008924A3 /* HelloScene.swift in Sources */,
 				EE4C2A931DAF9822008924A3 /* LayerGeometryDemo.swift in Sources */,
 				EE4C2ABC1DAF9822008924A3 /* DemoCell2.swift in Sources */,
@@ -1505,6 +1533,7 @@
 				EE4C2A801DAF9822008924A3 /* Spaceship.swift in Sources */,
 				EE4C2ABD1DAF9822008924A3 /* GoodsDetailViewController.swift in Sources */,
 				EE4C2A831DAF9822008924A3 /* MainController.swift in Sources */,
+				EE82C1721DB9AB8F0055593D /* ChalkDarwing2.swift in Sources */,
 				EE4C2A9B1DAF9822008924A3 /* ImplicitAnimationsDemo.swift in Sources */,
 				EE82C1571DB716B00055593D /* TuningSpeedDemo.swift in Sources */,
 				EE4C2A871DAF9822008924A3 /* ThreeTouchDemo.swift in Sources */,
@@ -1513,6 +1542,7 @@
 				EE4C2A761DAF9822008924A3 /* YYBaseNavigationController.swift in Sources */,
 				EE4C2AB41DAF9822008924A3 /* YYLibDemo.swift in Sources */,
 				EE4C2AB91DAF9822008924A3 /* GoodsDetailGraphicViewController.swift in Sources */,
+				EE82C16E1DB85F360055593D /* DrawingView2.swift in Sources */,
 				EE4C2AAD1DAF9822008924A3 /* TodoListReduxDemo.swift in Sources */,
 				EE4C2A971DAF9822008924A3 /* CubeView.swift in Sources */,
 				EE4C2ABE1DAF9822008924A3 /* UsefulExperienceDemo.swift in Sources */,
@@ -1525,6 +1555,7 @@
 				EE4C2AB21DAF9822008924A3 /* ThirdLibDemo.swift in Sources */,
 				EE4C2AA91DAF9822008924A3 /* TodoList.swift in Sources */,
 				EE4C2A951DAF9822008924A3 /* VisualEffectsDemo.swift in Sources */,
+				EE82C16C1DB85BBD0055593D /* DrawingView.swift in Sources */,
 				EE4C2A911DAF9822008924A3 /* BackingImageDemo.swift in Sources */,
 				EE4C2ABA1DAF9822008924A3 /* DemoCell.swift in Sources */,
 				EE4C2A731DAF9822008924A3 /* AppInfo.swift in Sources */,
@@ -1540,6 +1571,7 @@
 				EE4C2AA41DAF9822008924A3 /* ReduxDemo.swift in Sources */,
 				EE1F5A071DB49EE200869B9A /* FunctionalThoughtDemo.swift in Sources */,
 				EE4C2AB51DAF9822008924A3 /* YYNoDataViewDemo.swift in Sources */,
+				EE82C1701DB865A90055593D /* ChalkDarwing.swift in Sources */,
 				EE4C2A991DAF9822008924A3 /* TransformDemo.swift in Sources */,
 				EE4C2AAC1DAF9822008924A3 /* TodoListReducer.swift in Sources */,
 				EE4C2A8D1DAF9822008924A3 /* UIKitDemo.swift in Sources */,
