@@ -30,7 +30,12 @@ class MainController: YYBaseTabBarController {
         yyLogInfo(12345)
         yyLogWarning(["2": "3", "4": "5"])
         yyLogError(YYLogger.default.miniLevel)
-        yyLogFatal(self)
+        var sself = self
+        withUnsafePointer(to: &sself) { p in
+            yyLogFatal(sself)
+            yyLogFatal(p)
+        }
+        yyLogFatal("\(self)")
         
         /**< 输入如下：
          😭[FATAL][2016-10-12 02:24:15 +0000][MainController.swift: viewDidLoad(): 28] fatal
